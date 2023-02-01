@@ -1,0 +1,17 @@
+*{
+    padding:0;
+    margin:0;
+    border:0;
+    text-align:center;
+}
+.navbar{
+    height:80px;
+    width:100%;
+    background-color: darkcyan;
+}
+
+.navbar li{
+display:flex;
+flex-direction: row;
+
+}
