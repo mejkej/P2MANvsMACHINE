@@ -16,6 +16,7 @@
     background-color:darkcyan;
     display:flex;
     justify-content: space-evenly;
+    text-decoration:none;
 }
 
 .navbar li{
@@ -30,9 +31,48 @@ margin-bottom:12px;
     padding:10px;
     border:10px;
     border-radius:50%;
+    text-decoration: none;
 
 }
 a:hover{
     background-color:black;
     color:azure;
+}
+
+.playedhands{
+    height:50px;
+    width:100%;
+}
+.playedhands img{
+    width:50px;
+    height:50px;
+    justify-content: space-around;
+}
+.profilepics{
+    width:100%;
+    padding-top:20px;
+}
+.profilepics img{
+    max-width:100px;
+    max-height:150px;
+    justify-content:space-between;
+    margin-left:40px;
+    margin-left:40px;
+}
+.rps{
+    height:90px;
+    width:100%;
+    background-color:darkcyan;
+}
+.rps button{
+    margin-top:10px;
+    padding:10px;
+    border:10px;
+    border-radius:50%;
+    margin-bottom:10px;
+    margin-left:20px;
+    margin-right:20px;
+}
+button:hover{
+background-color:darkred;
 }
