@@ -1,0 +1,38 @@
+*{
+    padding:0;
+    margin:0;
+    border:0;
+    text-align:center;
+    color:black;
+}
+
+.navbar{
+    padding:0;
+    margin:0;
+    border:0;
+    height:70px;
+    width:100%;
+    font-size:150%;
+    background-color:darkcyan;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.navbar li{
+list-style-type:none;
+display:inline-flex;
+margin-top:10px;
+margin-bottom:12px;
+}
+
+.navbar a{
+    background-color:azure;
+    padding:10px;
+    border:10px;
+    border-radius:50%;
+
+}
+a:hover{
+    background-color:black;
+    color:azure;
+}
