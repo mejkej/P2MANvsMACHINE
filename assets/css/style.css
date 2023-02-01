@@ -40,12 +40,12 @@ a:hover{
 }
 
 .playedhands{
-    height:50px;
+    height:70px;
     width:100%;
 }
 .playedhands img{
-    width:50px;
-    height:50px;
+    width:70px;
+    height:70px;
     justify-content: space-around;
 }
 .profilepics{
