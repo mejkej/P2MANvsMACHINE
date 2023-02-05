@@ -1,6 +1,8 @@
-const choices = ["rock", "paper", "scissors"];
-const playerHand = document.querySelector('#man-hand');
-const computerHand = document.querySelector('#machine-hand');
-const resultText = document.querySelector('#text-result');
-const playerScore = document.querySelector('#p-score');
-const compScore = document.querySelector('#c-score');
+const playerHand = document.getElementById('man-hand');
+const computerHand = document.getElementById('machine-hand');
+const resultText = document.getElementById('text-result');
+const playerScore = document.getElementById('p-score');
+const compScore = document.getElementById('c-score');
+const rock = document.getElementById('rock')
+const paper = document.getElementById('paper')
+const scissors = document.getElementById('scissors')
