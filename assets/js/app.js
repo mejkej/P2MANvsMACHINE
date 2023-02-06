@@ -22,7 +22,6 @@ Array.from(possiblePicks).forEach(possiblePick => possiblePick.addEventListener(
 
 function getCompPick() {
     const randomNumber = Math.floor(Math.random() * 3) + 1
-    
     if (randomNumber === 1) {
       compPick = 'rock'
     }
@@ -35,7 +34,18 @@ function getCompPick() {
     computerHand.src = 'assets/images/' + compPick + '.png';
   }
 
-  function declareWinner(){
+  function scoreCount(){
+    if (resultText.innerHTML === 'YOU WIN! One point for mankind!') {
+    playerPoints++; 
+    playerScore.innerHTML = playerPoints++;
+
+    }
+    if (resultText.innerHTML === 'YOU LOSE! One point for the machine!')
+    compPoints++;
+    compScore.innerHTML = compPoints; 
+  }
+
+  function declareWinner() {
     if (compPick === playerPick){
         resultText.innerHTML = 'DRAW!'
     }
@@ -57,18 +67,8 @@ function getCompPick() {
       if (compPick === 'scissors' && playerPick === 'paper'){
         resultText.innerHTML = 'YOU LOSE! One point for the machine!'
       }
-      
-
-  }
-
-  function scoreCount(){
-    if (resultText.innerHTML === 'YOU WIN! One point for mankind!'){
-        playerPoints =+1;
-        playerScore.innerHTML = playerPoints;
-    }
-    if (resultText.innerHTML === 'YOU LOSE! One point for the machine!'){
-        compPoints =+1;
-        compScore.innerHTML = compPoints;
     }
 
-  }
+  
+
+ 
