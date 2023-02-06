@@ -5,41 +5,58 @@ const playerScore = document.getElementById('p-score');
 const compScore = document.getElementById('c-score');
 
 const possiblePicks = document.getElementsByClassName('possiblePick');
+let compPoints;
+let playerPoints;
 
 let playerPick;
 let compPick;
 
 
 Array.from(possiblePicks).forEach(possiblePick => possiblePick.addEventListener('click', (e) => {
-    playerPick = 'assets/images/' + e.target.id + '.png';
-    playerHand.src = playerPick;
+    playerPick = e.target.id;
+    playerHand.src = 'assets/images/' + playerPick + '.png'
     getCompPick()
     declareWinner()
+    givePoints()
 }));
 
 function getCompPick() {
-    const randomNumber = Math.floor(Math.random() * 3) + 1 // or you can use possibleChoices.length
+    const randomNumber = Math.floor(Math.random() * 3) + 1
     
     if (randomNumber === 1) {
-      compPick = 'assets/images/rock.png'
+      compPick = 'rock'
     }
     if (randomNumber === 2) {
-      compPick = 'assets/images/paper.png'
+      compPick = 'paper'
     }
     if (randomNumber === 3) {
-      compPick = 'assets/images/scissors.png'
+      compPick = 'scissors'
     }
-    computerHand.src = compPick;
+    computerHand.src = 'assets/images/' + compPick + '.png';
   }
 
   function declareWinner(){
     if (compPick === playerPick){
         resultText.innerHTML = 'DRAW!'
     }
-      if (compPick === 'assets/images/rock.png' && playerPick === 'assets/images/paper.png'){
-        resultText.innerHTML = 'One point for mankind!'
+      if (compPick === 'rock' && playerPick === 'paper'){
+        resultText.innerHTML = 'YOU WIN! One point for mankind!'
       }
-    
+      if (compPick === 'paper' && playerPick === 'scissors'){
+        resultText.innerHTML = 'YOU WIN! One point for mankind!'
+      }
+      if (compPick === 'scissors' && playerPick === 'rock'){
+        resultText.innerHTML = 'YOU WIN! One point for mankind!'
+      }
+      if (compPick === '' && playerPick === ''){
+        resultText.innerHTML = 'YOU LOSE! One point for the machine!'
+      }
+      if (compPick === '' && playerPick === ''){
+        resultText.innerHTML = 'YOU LOSE! One point for the machine!'
+      }
+      if (compPick === '' && playerPick === ''){
+        resultText.innerHTML = 'YOU LOSE! One point for the machine!'
+      }
       
 
 
