@@ -76,3 +76,60 @@ a:hover{
 button:hover{
 background-color:darkred;
 }
+restartrps.{
+
+}
+
+/*TIC TAC TOE CSS BELOW*/
+
+.board{
+ height:300px;
+ width:300px;
+ align-content: center;
+ 
+}
+.top{
+    display:inline-flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.mid{
+    text-align:justify;
+    display:inline-flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.bottom{
+    display:inline-flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+    border: 2px solid black;
+    justify-content: center;
+  align-items: center;
+}
+.color{
+    height:90px;
+    width:100%;
+    background-color:darkcyan;
+}
+
+#restart-tic-tac-toe{
+font-size:150%;
+background-color:yellow;
+color:black;
+padding:7px;
+margin-top:20px;
+border-radius:10%
+}
