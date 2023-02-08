@@ -1,4 +1,8 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+X Coordinate icon by Icons8
+
+O icon by Icons8
+
 
 Welcome mejkej,
 
