@@ -82,43 +82,43 @@ restartrps.{
 
 /*TIC TAC TOE CSS BELOW*/
 
-.board{
- height:300px;
- width:300px;
- align-content: center;
- 
+#board{
+padding-top:4px;
+background-color:darkcyan;
+margin:2px;
+border:2px;
+border-bottom:2px;
+display:inline-block;
+max-width:320px;
+max-height:320px;
+width:320px;
+height:320px;
+text-align: center;
+align-items:center;
 }
+
 .top{
-    display:inline-flex;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    font-size: 48px;
-    border: 2px solid black;
-    justify-content: center;
-    align-items: center;
+background-color:aliceblue;
+display:inline-flex;
+height: 100px;
+width:100px;
 }
+
 .mid{
-    text-align:justify;
-    display:inline-flex;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    font-size: 48px;
-    border: 2px solid black;
     justify-content: center;
-    align-items: center;
+    background-color:aliceblue;
+    display:inline-flex;
+    height: 100px;
+    width:100px;
 }
+
 .bottom{
+    background-color:aliceblue;
     display:inline-flex;
-    align-items: center;
-    width: 100px;
     height: 100px;
-    font-size: 48px;
-    border: 2px solid black;
-    justify-content: center;
-  align-items: center;
+    width:100px;
 }
+
 .color{
     height:90px;
     width:100%;
@@ -132,4 +132,7 @@ color:black;
 padding:7px;
 margin-top:20px;
 border-radius:10%
+}
+.color button:hover{
+    border-color:black;
 }
