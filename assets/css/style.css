@@ -60,23 +60,34 @@ a:hover{
     margin-left:40px;
 }
 .rps{
+    text-align:center;
+    justify-content: center;
+    display:flex;
     height:90px;
     width:100%;
     background-color:darkcyan;
 }
 .rps button{
+    align-items: center;
+    display:inline;
     margin-top:10px;
     padding:10px;
     border:10px;
     border-radius:50%;
     margin-bottom:10px;
-    margin-left:20px;
-    margin-right:20px;
+   
 }
 button:hover{
 background-color:darkred;
 }
-restartrps.{
+
+#reset-rps{
+PADDING:5PX;
+BORDER:10PX;
+background-color:yellow;
+}
+#reset-rps:hover{
+background-color:darkred;
 
 }
 
@@ -103,6 +114,12 @@ display:inline-flex;
 height: 100px;
 width:100px;
 }
+.top img{
+position:relative;
+overflow: hidden;
+
+    ¨
+}
 
 .mid{
     justify-content: center;
@@ -112,6 +129,10 @@ width:100px;
     width:100px;
 }
 
+.mid img{
+    position:relative;
+    overflow: hidden;
+}
 .bottom{
     background-color:aliceblue;
     display:inline-flex;
@@ -119,6 +140,10 @@ width:100px;
     width:100px;
 }
 
+.bottom img{
+    position:relative;
+    overflow: hidden;
+}
 .color{
     height:90px;
     width:100%;

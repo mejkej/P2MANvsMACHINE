@@ -5,12 +5,21 @@ const playerScore = document.getElementById('p-score');
 const compScore = document.getElementById('c-score');
 const possiblePicks = document.getElementsByClassName('possiblePick');
 
+const resetBtn = document.getElementById('reset-rps');
+
+
+resetBtn.addEventListener('click', function() {
+    playerPoints = 0;
+    compPoints = 0;
+    playerScore.innerHTML = playerPoints;
+    compScore.innerHTML = compPoints;
+});
+
 let playerPoints = 0;
 let compPoints = 0;
 
 let playerPick;
 let compPick;
-
 
 Array.from(possiblePicks).forEach(possiblePick => possiblePick.addEventListener('click', (e) => {
     playerPick = e.target.id;
@@ -37,7 +46,7 @@ function getCompPick() {
   function scoreCount(){
     if (resultText.innerHTML === 'YOU WIN! One point for mankind!') {
     playerPoints++; 
-    playerScore.innerHTML = playerPoints++;
+    playerScore.innerHTML = playerPoints;
 
     }
     if (resultText.innerHTML === 'YOU LOSE! One point for the machine!')
