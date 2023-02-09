@@ -20,7 +20,13 @@ function computerTurn() {
     computerTurn();
   }
 }
+const resetBtn = document.getElementById('ttt-resetBtn');
 
+}
+
+function getWinner(){
+
+}
 
 
 
