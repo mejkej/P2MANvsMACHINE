@@ -94,56 +94,35 @@ background-color:darkred;
 /*TIC TAC TOE CSS BELOW*/
 
 #board{
-padding-top:4px;
-background-color:darkcyan;
-margin:2px;
-border:2px;
-border-bottom:2px;
-display:inline-block;
-max-width:320px;
-max-height:320px;
-width:320px;
-height:320px;
-text-align: center;
-align-items:center;
+
 }
 
 .top{
-background-color:aliceblue;
-display:inline-flex;
-height: 100px;
-width:100px;
-}
-.top img{
-position:relative;
-overflow: hidden;
-
-    ¨
+min-height:100px;
+max-width:320px;
+max-height:100px;
 }
 
 .mid{
-    justify-content: center;
-    background-color:aliceblue;
-    display:inline-flex;
-    height: 100px;
-    width:100px;
+min-height:100px;
+max-width:320px;
+max-height:100px;
 }
 
-.mid img{
-    position:relative;
-    overflow: hidden;
-}
-.bottom{
-    background-color:aliceblue;
-    display:inline-flex;
-    height: 100px;
-    width:100px;
+.bot{
+max-width:320px;
+max-height:100px;
+min-height:100px;
 }
 
-.bottom img{
-    position:relative;
-    overflow: hidden;
+.square{
+align-items: center;
+height:100px;
+width:100px;
 }
+
+
+
 .color{
     height:90px;
     width:100%;
@@ -158,6 +137,8 @@ padding:7px;
 margin-top:20px;
 border-radius:10%
 }
-.color button:hover{
-    border-color:black;
+
+
+#restart-tic-tac-toe:hover{
+background-color:darkred;
 }
