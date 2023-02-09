@@ -21,8 +21,9 @@ function computerTurn() {
   }
 }
 const resetBtn = document.getElementById('ttt-resetBtn');
-
-}
+Array.from(
+    
+)
 
 function getWinner(){
 
