@@ -1,5 +1,10 @@
 const squares = document.getElementsByClassName("square");
 let playerTurn = true;
+const resetBtn = document.getElementById('ttt-resetBtn');
+
+resetBtn.addEventListener('click', function(){
+  squares.setAttribute("src", = "")
+})
 
 Array.from(squares).forEach(square => {
   square.addEventListener("click", function() {
@@ -20,15 +25,11 @@ function computerTurn() {
     computerTurn();
   }
 }
-const resetBtn = document.getElementById('ttt-resetBtn');
-Array.from(
     
-)
 
 function getWinner(){
 
 }
-
 
 
 
