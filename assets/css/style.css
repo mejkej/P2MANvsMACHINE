@@ -102,6 +102,10 @@ display:flex;
 min-height:100px;
 max-width:320px;
 max-height:100px;
+margin:2px;
+border:2px;
+border-color:darkcyan;
+color:darkcyan;
 }
 
 
