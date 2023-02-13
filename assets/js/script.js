@@ -1,17 +1,13 @@
-const resetBtn = document.getElementById('ttt-resetBtn');
-const board = document.getElementById('board');
-const message = document.getElementById('message');
-const freeSquares = document.getElementsByClassName('square');
+const squares = document.querySelectorAll(".square");
+const pickedSquare = document.querySelector("#pickedSquare");
+const message = document.querySelector("#message");
+const xImage = pickedSquare.children[0];
+const oImage = pickedSquare.children[1];
 
-
-Array.from(freeSquares).forEach(square => {
-    square.addEventListener('click', (e) => {
-        if (e.target.src === "assets/images/sqr.png")
-        e.target.src = "assets/images/sqr.png";
-  
-    })
-})
-
-
+Array.from(squares).forEach(square => square.addEventListener('click', (e) => {
+if (e.target.src === 'assets/images/sqr.png') {
+  e.target.src = 'assets/images/sqr.png';
+}
+}))
 
 

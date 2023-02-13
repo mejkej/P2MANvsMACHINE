@@ -93,9 +93,6 @@ background-color:darkred;
 
 /*TIC TAC TOE CSS BELOW*/
 
-#board{
-
-}
 
 .top .mid .bot{
 display:flex;
@@ -142,4 +139,11 @@ background-color:darkred;
     height:90px;
     width:100%;
     background-color:darkcyan;
+}
+
+#pickedSquare img{
+    display:none;
+    width:0;
+    height:0;
+    
 }
