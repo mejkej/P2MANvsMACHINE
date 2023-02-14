@@ -15,6 +15,7 @@ resetBtn.addEventListener('click', function() {
     compScore.innerHTML = compPoints;
 });
 
+
 let playerPoints = 0;
 let compPoints = 0;
 
@@ -27,7 +28,16 @@ Array.from(possiblePicks).forEach(possiblePick => possiblePick.addEventListener(
     getCompPick()
     declareWinner()
     scoreCount()
+    round()
 }));
+
+function round() {
+  setTimeout(() => {
+    resultText.innerHTML = '';
+      playerHand.src = '';
+        computerHand.src = '';
+  }, 1500);
+}
 
 function getCompPick() {
     const randomNumber = Math.floor(Math.random() * 3) + 1
@@ -44,12 +54,12 @@ function getCompPick() {
   }
 
   function scoreCount(){
-    if (resultText.innerHTML === 'YOU WIN! One point for mankind!') {
+    if (resultText.innerHTML === 'YOU WIN!') {
     playerPoints++; 
     playerScore.innerHTML = playerPoints;
 
     }
-    if (resultText.innerHTML === 'YOU LOSE! One point for the machine!')
+    if (resultText.innerHTML === 'YOU LOSE!')
     compPoints++;
     compScore.innerHTML = compPoints; 
   }
@@ -59,22 +69,22 @@ function getCompPick() {
         resultText.innerHTML = 'DRAW!'
     }
       if (compPick === 'rock' && playerPick === 'paper'){
-        resultText.innerHTML = 'YOU WIN! One point for mankind!'
+        resultText.innerHTML = 'YOU WIN!'
       }
       if (compPick === 'paper' && playerPick === 'scissors'){
-        resultText.innerHTML = 'YOU WIN! One point for mankind!'
+        resultText.innerHTML = 'YOU WIN!'
       }
       if (compPick === 'scissors' && playerPick === 'rock'){
-        resultText.innerHTML = 'YOU WIN! One point for mankind!'
+        resultText.innerHTML = 'YOU WIN!'
       }
       if (compPick === 'rock' && playerPick === 'scissors'){
-        resultText.innerHTML = 'YOU LOSE! One point for the machine!'
+        resultText.innerHTML = 'YOU LOSE!!'
       }
       if (compPick === 'paper' && playerPick === 'rock'){
-        resultText.innerHTML = 'YOU LOSE! One point for the machine!'
+        resultText.innerHTML = 'YOU LOSE!'
       }
       if (compPick === 'scissors' && playerPick === 'paper'){
-        resultText.innerHTML = 'YOU LOSE! One point for the machine!'
+        resultText.innerHTML = 'YOU LOSE!'
       }
     }
 
