@@ -5,7 +5,7 @@ const playerSymbol = 'x';
 const computerSymbol = 'o';
 
 resetBtn.addEventListener('click', function() {
-    squares.src = 'assets/images/sqr-png';
+    location.reload();
 });
 
 for (let i = 0; i < squares.length; i++) {
