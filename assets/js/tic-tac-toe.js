@@ -3,7 +3,7 @@ const message = document.getElementById('message');
 const resetBtn = document.getElementById('ttt-resetBtn');
 const playerSymbol = 'x';
 const computerSymbol = 'o';
-
+//remove EventListener When gameOver declare draw consider adding a scoreboard.
 resetBtn.addEventListener('click', function() {
     location.reload();
 });
