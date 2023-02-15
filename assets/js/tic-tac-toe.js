@@ -23,14 +23,23 @@ for (let i = 0; i < squares.length; i++) {
     const getWinner = winDetector();
     if(getWinner === playerSymbol){
         message.innerHTML = 'You Win!'
+        
     }
     else if (getWinner === computerSymbol){
         message.innerHTML = 'The Machine Wins!'
+        gameOver();
     }
     }
 })};
 
-function winDetector () {
+function drawDetector() {
+if (message.innerHTML === 'Make your move!'){
+    message.innerHTML = 'Draw!';
+}
+}
+
+
+function winDetector() {
   const waysToWin = [ 
   [0, 1, 2], [3, 4, 5], [6, 7, 8],
   [0, 3, 6], [1, 4, 7], [2, 5, 8], 
