@@ -1,21 +1,21 @@
-const resetBtn = document.getElementById('ttt-resetBtn');
-const playerPick = document.querySelectorAll('img[src="assets/images/x.png"]');
-const computerPick = document.querySelectorAll('img[src="assets/images/o.png"]');
 const squares = document.getElementsByClassName('square');
 const message = document.getElementById('message');
+const resetBtn = document.getElementById('ttt-resetBtn');
+const playerSymbol = 'x';
+const computerSymbol = 'o';
 
-Array.from(squares).forEach(square => square.addEventListener('click', (e) => {
- e.target.src = "assets/images/x.png"
- e.target = playerPick;
- getCompPick();
- 
-}));
-
-getCompPick() {
-const randomNumber = Math.random(squares.length);
-return(randomNumber);
-}
-
-resetBtn.addEventListener('click', function(){
-    location.reload();
+resetBtn.addEventListener('click', function() {
+    squares.src = 'assets/images/sqr-png';
 });
+
+for (let i = 0; i < squares.length; i++) {
+  squares[i].addEventListener('click', function () {
+    if (squares[i].getAttribute('data-symbol') ==='') { 
+    squares[i].src = 'assets/images/x.png';
+    squares[i].setAttribute('data-symbol',playerSymbol);
+    
+
+}})};
+
+
+
