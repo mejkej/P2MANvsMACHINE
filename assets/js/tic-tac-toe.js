@@ -8,6 +8,10 @@ const waysToWin = [
   [0, 3, 6], [1, 4, 7], [2, 5, 8], 
   [0, 4, 8], [2, 4, 6]
 ];
+const playerScoreDisplay = document.getElementById('playerScore');
+const computerScoreDisplay = document.getElementById('computerScore');
+let playerScore = 0;
+let computerScore = 0;
 
 // reset game 
 resetBtn.addEventListener('click', function() {
@@ -22,6 +26,8 @@ function handleClick(event) {
     getCompPick();
     resultDetector();
     gameOver();
+    scoreKeeper();
+    round();
   }
 }
 
@@ -63,4 +69,26 @@ function resultDetector() {
   } else if (Array.from(squares).every(square => square.getAttribute('data-symbol') !== '')) {
     message.innerHTML = 'Draw!';
   }
+}
+function scoreKeeper(){
+  if (message.innerHTML === 'You Win!'){
+    playerScore++;
+    playerScoreDisplay.innerHTML = playerScore;
+  }
+  if (message.innerHTML === 'You Lost!'){
+    computerScore++;
+    computerScoreDisplay.innerHTML = computerScore;
+  }
+}
+function round() {
+  setTimeout(() => {
+    if (message.innerHTML === 'You Win!' || message.innerHTML === 'You Lost!' || message.innerHTML === 'Draw!') {
+    message.innerHTML = 'Make your move, click on a square.';
+    for (let i = 0; i < squares.length; i++) {
+    squares[i].src = 'assets/images/sqr.png';
+    squares[i].setAttribute('data-symbol', '');
+    squares[i].addEventListener('click', handleClick);
+    }
+    }
+  }, 3000);
 }

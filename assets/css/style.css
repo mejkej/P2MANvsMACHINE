@@ -121,10 +121,9 @@ width:100px;
 #ttt-resetBtn {
 margin-top:20px;
 border-radius:50%;
-font-size:150%;
 justify-content: center;
-PADDING:15PX;
-BORDER:5PX;
+PADDING:10PX;
+BORDER:10PX;
 background-color:yellow;
 
 }
