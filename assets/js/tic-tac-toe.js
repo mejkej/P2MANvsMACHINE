@@ -10,33 +10,39 @@ const waysToWin = [
 ];
 
 // reset game 
-
 resetBtn.addEventListener('click', function() {
   location.reload();
 });
 
-//main loop
-for (let i = 0; i < squares.length; i++) {
-  squares[i].addEventListener('click', function (){ 
-    if (squares[i].getAttribute('data-symbol') === '') { 
-    squares[i].src = 'assets/images/x.png';
-    squares[i].setAttribute('data-symbol', playerSymbol);  
+function handleClick(event) {
+  if (event.target.getAttribute('data-symbol') === '') {
+    event.target.src = 'assets/images/x.png';
+    event.target.setAttribute('data-symbol', playerSymbol);
     resultDetector();
     getCompPick();
     resultDetector();
-  
-    
+    gameOver();
   }
-   }
-  )
-};
-//generating a randomized computer pick the picked square gets assigned a new src and a data-symbol
+}
+
+function gameOver() {
+  if (message.innerHTML === 'You Win!' || message.innerHTML === 'You Lost!') {
+    for (let i = 0; i < squares.length; i++) {
+      squares[i].removeEventListener('click', handleClick);
+    }
+  }
+}
+
+for (let i = 0; i < squares.length; i++) {
+  squares[i].addEventListener('click', handleClick);
+}
+
 function getCompPick() {
   const unPickedSquare = Array.from(squares).filter(square => square.getAttribute('data-symbol') === '');
   const randomNumber = Math.floor(Math.random() * unPickedSquare.length);
   unPickedSquare[randomNumber].src = 'assets/images/o.png';
   unPickedSquare[randomNumber].setAttribute('data-symbol', computerSymbol);
-} 
+}
 
 function resultDetector() {
   let winner = null;
@@ -55,14 +61,6 @@ function resultDetector() {
   } else if (winner === computerSymbol) {
     message.innerHTML = 'You Lost!';
   } else if (Array.from(squares).every(square => square.getAttribute('data-symbol') !== '')) {
-    message.innerHTML = 'Draw game!';
+    message.innerHTML = 'Draw!';
   }
 }
-
-
-
-
-
-
-
-
