@@ -9,21 +9,27 @@
     <title>Man against machine!</title>
   </head>
   <body>
+    <!--Navbar, img/icons inside anchor links inside a div HTMl&CSS ONLY-->
     <div class="navbar">
       <a href="index.html"><img src="assets/images/rpsicon.png" alt="RPS icon"></a>
       <a href="tic-tac-toe.html"><img src="assets/images/navttt.png" alt="TTT icon"></a>
     </div>
+    <!--main game area consisting of HTML&CSS&JS-->
     <h1>Rock Paper Scissors</h1>
+    <!--Score board & outcome declaration-->
     <h1><span id="p-score">0</span>-<span id="c-score">0</span></h1>
     <h2><span id="text-result"></span></h2>
+    <!--img elements displaying players and computers pick-->
     <div class="playedhands">
       <img id="man-hand">
       <img id="machine-hand">
     </div>
+    <!--profile pictures-->
     <div class="profilepics">
       <img id="man-profile" src="assets/images/player.png">
       <img id="machine-profile" src="assets/images/comp.png">
     </div>
+    <!--div with 4 relativly round buttons. Rock, paper and scissors. Also a reset button for the scoreboard :hover effect on all buttons-->
     <div class="rps">
       <button><img alt="rock" class="possiblePick" id="rock" src="assets/images/rock.png"></button>
       <button><img alt="paper" class="possiblePick" id="paper" src="assets/images/paper.png"></button>

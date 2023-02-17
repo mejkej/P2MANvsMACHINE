@@ -9,14 +9,18 @@
     <title>Man against machine!</title>
   </head>
   <body>
+        <!--Navbar, img/icons inside anchor links inside a div HTMl&CSS ONLY-->
     <div class="navbar">
       <a href="index.html"><img src="assets/images/rpsicon.png" alt="RPS icon"></a>
       <a href="tic-tac-toe.html"><img src="assets/images/navttt.png" alt="TTT icon"></a>
     </div>
+        <!--main game area consisting of HTML&CSS&JS-->
     <h1>Tic Tac Toe</h1>
+        <!--scoreboard & message/outcome declaration text-->
     <h2 id="message">Click on a square</h2>
     <h1><span id="playerScore">0</span>-<span id="compScore">0</span></h1>
     <div id="board">
+      <!--the game board consisting of 9 img elements and 4 divs-->
       <div class="top">
         <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="0" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="1" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="2" class="square">
       </div>
@@ -27,6 +31,7 @@
         <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="6" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="7" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="8" class="square">
       </div>
     </div>
+    <!--Div with a reset button to reset the score-->
     <div id="btnbgcolor">
       <button id="ttt-resetBtn">RESET</button>
     </div>
