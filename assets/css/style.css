@@ -77,7 +77,8 @@ button:hover{
 /*TIC TAC TOE CSS BELOW*/
 .top .mid .bot{
     display:flex;
-    min-height:100px;
+    min-height:70px;
+    min-width:70px;
     max-width:320px;
     max-height:100px;
     margin:2px;
@@ -87,6 +88,8 @@ button:hover{
 }
 .square{
     align-items: center;
+    max-height:100px;
+    max-width:100px;
     height:100px;
     width:100px;
 }
@@ -112,4 +115,12 @@ button:hover{
     height:90px;
     width:100%;
     background-color:darkcyan;
+}
+
+@media screen and (max-width: 310px) {
+    
+    .square{
+        height:70px;
+        width:70px;
+    }
 }
