@@ -123,4 +123,12 @@ button:hover{
         height:70px;
         width:70px;
     }
+    .profilepics{
+    display:flex;
+    }
+    .profilepics img{
+    display:inline-flex;
+    margin:0;
+    border:0;
+    }
 }
