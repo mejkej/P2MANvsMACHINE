@@ -83,7 +83,7 @@ function scoreKeeper(){
 function round() {
   setTimeout(() => {
     if (message.innerHTML === 'You Win!' || message.innerHTML === 'You Lost!' || message.innerHTML === 'Draw!') {
-    message.innerHTML = 'Make your move, click on a square.';
+    message.innerHTML = '';
     for (let i = 0; i < squares.length; i++) {
     squares[i].src = 'assets/images/sqr.png';
     squares[i].setAttribute('data-symbol', '');
