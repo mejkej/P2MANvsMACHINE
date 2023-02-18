@@ -91,5 +91,3 @@ function declareWinner() {
     resultText.innerHTML = 'YOU LOSE!';
   }
 }
-
- 

@@ -4,9 +4,14 @@ const resetBtn = document.getElementById('ttt-resetBtn');
 const playerSymbol = 'x';
 const computerSymbol = 'o';
 const waysToWin = [
-  [0, 1, 2], [3, 4, 5], [6, 7, 8],
-  [0, 3, 6], [1, 4, 7], [2, 5, 8], 
-  [0, 4, 8], [2, 4, 6]
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6]
 ];
 const playerScoreDisplay = document.getElementById('playerScore');
 const computerScoreDisplay = document.getElementById('computerScore');
@@ -14,7 +19,7 @@ let playerScore = 0;
 let computerScore = 0;
 
 // reset game 
-resetBtn.addEventListener('click', function() {
+resetBtn.addEventListener('click', function () {
   location.reload();
 });
 
@@ -60,8 +65,8 @@ function resultDetector() {
   for (let i = 0; i < waysToWin.length; i++) {
     const [a, b, c] = waysToWin[i];
     if (squares[a].getAttribute('data-symbol') !== '' &&
-        squares[a].getAttribute('data-symbol') === squares[b].getAttribute('data-symbol') &&
-        squares[a].getAttribute('data-symbol') === squares[c].getAttribute('data-symbol')) {
+      squares[a].getAttribute('data-symbol') === squares[b].getAttribute('data-symbol') &&
+      squares[a].getAttribute('data-symbol') === squares[c].getAttribute('data-symbol')) {
       winner = squares[a].getAttribute('data-symbol');
       break;
     }
@@ -76,12 +81,12 @@ function resultDetector() {
   }
 }
 //Score keeper  
-function scoreKeeper(){
-  if (message.innerHTML === 'You Win!'){
+function scoreKeeper() {
+  if (message.innerHTML === 'You Win!') {
     playerScore++;
     playerScoreDisplay.innerHTML = playerScore;
   }
-  if (message.innerHTML === 'You Lost!'){
+  if (message.innerHTML === 'You Lost!') {
     computerScore++;
     computerScoreDisplay.innerHTML = computerScore;
   }
@@ -90,12 +95,12 @@ function scoreKeeper(){
 function round() {
   setTimeout(() => {
     if (message.innerHTML === 'You Win!' || message.innerHTML === 'You Lost!' || message.innerHTML === 'Draw!') {
-    message.innerHTML = '';
-    for (let i = 0; i < squares.length; i++) {
-    squares[i].src = 'assets/images/sqr.png';
-    squares[i].setAttribute('data-symbol', '');
-    squares[i].addEventListener('click', handleClick);
-    }
+      message.innerHTML = '';
+      for (let i = 0; i < squares.length; i++) {
+        squares[i].src = 'assets/images/sqr.png';
+        squares[i].setAttribute('data-symbol', '');
+        squares[i].addEventListener('click', handleClick);
+      }
     }
   }, 3000);
 }
