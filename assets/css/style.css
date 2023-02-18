@@ -116,7 +116,8 @@ button:hover{
     width:100%;
     background-color:darkcyan;
 }
-
+/*media screen for small phones. Since developer tools smallest fixed unit was 320px i thaught that was the magic
+limit number but since reading the feedback on my previous project i made a few adjustments */
 @media screen and (max-width: 310px) {
     
     .square{
