@@ -30,7 +30,7 @@ players pick. Below these images are the players profile pictures.
 
 And on the bottom there is a Div with the same darkcyan color, a height of 90px and a 100% width.
 Inside the div there are 4 round buttons 3 of witch has images nested inside them (Rock, paper, and scissors) The fouth button is yellow with the text reset (to reset the score) All buttons has a hover effect but with a darkred color instead.
-## The Rock, paper, scissors Javascript.
+## The Rock, paper, scissors Javascript:
 First off i declared all the global scope variables and linked them to their HTML elements.
 
 ### Reset score button
@@ -50,7 +50,7 @@ the loop then continues with:
   scoreCount();
   round();
 
-  GetCompPick
+  ### GetCompPick
   inside this function a const variable is declared called randomNumber. randomNumber = a method 
   "Math.floor(Math.random() * 3) + 1;
   Math.floor Makes the random number generated to a 0 - 1 or 2 and not 0,33 0,66 or 0,99.
@@ -58,57 +58,104 @@ the loop then continues with:
   Then there is 3 if statements pairing the random numbers to either rock paper or scissors.
   If randomNumber === 1 compPick = rock and computerHand.src = 'assets/images/' + CompPick + '.png'.
 
-  declareWinner
+  ### declareWinner
   In this function all the possible outcomes of a round is stated and how they should be handled.
   So the picks gets compared and then the resultText.innerHtml Declares Win Loss or Draw.
 
-  scoreCount
+  ### scoreCount
   This function handles the scoreboard by looking at the resultText.innerHtml messsage.
   If the result text declares 'YOU WIN!' the let variable playerPoints increases by 1.
   And that then results in that the const variable playerScore.innerHTML displays the value of
   playerPoints and viceversa if the computer wins.
  
-  round
+  ### round
   This function resets the SRC of the playerHand image & compHand image. It also clears the resultText.
   So that after both players have made their Picks the result has been declared and the scoreboard has been
-  updated. Both playedhand images and result text is cleared indicating that its time to play the next round
+  updated. Both played hand images and result text is cleared indicating that its time to play the next round
   while still keeping track of the Scoreboard.
 
+  ## The Tic Tac Toe games HTML & CSS:
+
+  ### The Navbar 
+  Its exacly the same as on the other page.
+
+  ### The Game area
+  H1 Element with the text "Tic Tac Toe". Below the header there is a H2 element with with the text "Click on a square".
+  Below that one there is a H1 element with two spans nested inside of it, this is the Scoreboard.
+  
+  Then comes the Gameboard consisting of 4 divs and 9 image elements. So there are three divs wrapping 3 inline image elements each. The forth div wraps around them all. The squares are 100px wide and high unless you are using a screen smaller than 310pxs wide. Then they will be 70x70 px.
+
+  Below there is a div with the same color as the navbar but this div does only contain one button. Button alignment is centered and the shape is oval. Color is yellow with the black text, 'RESET'. Just like the buttons in the other game there is a hover effect. I Tryed to keep the styling consistant on both pages. 
+
+## The Tic tac toe games Javascript:
+### Cached the dom
+First of i declared most of the variable at the top. Some of them i linked to the HTML and others was assigned a value.
+
+### ResetButton
+Added a event listener to the button if button is clicked the page will get reloaded.
+Im sure there are better ways of doing that but time was of the essence and it does the job.
+
+### for loop 
+squares is a const varible declared on the top of the page the document can be gotten using a class selector.
+The for loop adds a click event listener to the squares[i]. Then it refers to the handleClick function,
+resulting in that everytime a square is clicked the handleClick function is called to handle the event.
+
+### handleClick(event)
+The function first checks if clicked square has a data-symbol if not that means the square
+has not yet been picked and the square/event target gets asigned a data-symbol attribute of 'x' / playerSymbol.
+Then the the event target get assigned the src of 'assets/images/x.png'. The function then checks for a winner or a loser
+to be declared by the #message H2. If that happens the squares event listener will be removed.
+
+### getCompPick 
+squares is a const variable declared on the top of the page with a path to the html using a class selector.
+Inside this function a const variable named unPickedSquare is declared and then gets assigned an array from squares.
+The Array filters out the squares that has been asigned a data-symbol. Another const variable named randomNumber is declared and get asigned the Math.floor(Math.random) method returning a randomPick from the unPickedsquares.
+the returned unPickedSquare gets assigned the src 'assets/images/o.png' and then the data-symbol attribute cumputerSymbol/'o'.
+### resultDetector 
+The result detector will run its check after every move both after player and then after the computer.
+
+First of all the img elements/squares has all been asigned an id first one is #0 and last one is #8.
+There is a const variable at the top of the page named waysToWin. It has been assigned eight arrays,
+These arrays contains the possible ways to win, three numbers the squares ids.
 
 
+Inside the function a let variable named winner is declared and given the value of null. 
+Then there is a for loop looping the ways to win variables length.
+Inside the function there is a new const variable declared given an array [a, b, c].
+[a, b, c] Is then asigned waysToWin[i] in other words [a] is now the first number in the eight arrays
+[b] the second and [c] the third.
 
+Then the function checks if square [a] has been asigned a data-symbol. it then goes on to compare if [a]&[b]
+has the same data-symbol. Then it checks if [a]&[c] data-symbol equals each others. If everything so far has
+turned out to be true, the let variable winner = square[a] data-symbol. if winner = playerSymbol the #message
+will read 'You Win!' and if the winner = computerSymbol the #message.innerHTML will read 'You Lost!'
 
+Lastly incase there was no winner, the function continues to run an array from every square checking if there
+is any squares that has not yet been asigned a data-symbol. If all squares has been asigned a data-symbol
+that means its a draw and the #message will read 'Draw!'
 
+### gameOver
+This function checks for the #message to call a win or a loss. If that happens a for loop will start looping the 
+squares[i] and the event listener will be removed from the squares one by one. By the handleClick (event) function. 
 
+### scoreKeeper
+On the top of the page i declared two let variables playerScore & computerScore these was asigned the value of 0.
+I also declared two const variables player&computerScoreDisplay and i linked them to the html with an id. 
+If the #message.innerHTML declares You Win! playerScore++ and playerScoreDisplay.innerHTML = playerScore.
+if the #message declares You Lost the same thing happens but to the computerScoreDisplay of course.
 
-## Navbar
-located on top of the website. Three anchor tags in an unordered list, Looks like three big buttons, i styled them to be oval and gave them a suiting color. One color as standard another while hovered and a third when selected.
-Also changed the size of the font for smaller screen device.
-
-
-## Video & Images
-All off the media on the website is wrapped in a div, in order to make it responsive. There is a set max and minimum width and height and the content is displayed in the center of the browser.
-
-
-
-
-
-
-
+### round
+If #message declares any outcome it means that the game is over. So when that happens this function
+clears the #message then starts a for loop for all the squares[i] asigning them the src 'assets/images/sqr.png'.
+Setting their data-symbol to '' and calls the handleClick function to restore the event listeners.
+So 3 seconds after completed game the game is reset but the score count is not.
 
 
 
 ## My personal thaught on the project
-Building this website has been both a dream and a nightmare. See i was not aware the projects had a due date.
-That is obviously entierly my own fault.
-
-I have been doing my absoulute best to try and catch up. The last ~3 weeks i have been working on this project day and night. There has not been much sleep my life has only revolved around web developement. Besides the stress and lack off sleep it has been amazing. I am so happy i started the course and only wish i did it sooner.
-
-I learned so many things along the way! For example that coding challenges and accually creating a project is two very
-different things! Github, Gitpod, visual studio code. Saving repositories, writing commands in the terminal. The list goes on, best of all is i realize that coding is fun, addictive and rewarding.
-
-It will be a pleasure to continue on this path. The course has my full attention and i am doing my best to catch up. I have made so many misstakes its incredible. I dont know if its in the CI material about how to save the repo in github but that has been an issue that is finally resolved. I have redone major parts off the project 3 times. The positive outcome of that is that i have gotten a much deeper understanding off css. Making the youtube video responsive took me ages but it taught me alot more than how to make a video responsive! 
-
+The jump from Html & Css to Javascript was surprisingly challenging i gotta say. But for everyday that i worked on the project it made more and more sense. I think i almost finished the rock paper scissors game 10 times just to clear the whole JS file and redo the whole thing over and over again until it made sense. If you know html css and javascript you can get a job, atleast thats what a few dudes on youtube claims. So i did my best to try and learn as much as possible.
+But the clock is ticking and i gotta get started with the next project! All in all it was a great experience and project.
+I am certainly looking forward to the day that i will be working on something more exciting!
 
 ## Resources:
 the resources i have used to get this project done
