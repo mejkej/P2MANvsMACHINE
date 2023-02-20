@@ -29,7 +29,7 @@ Next up a Div containing two image elements with an id of man-hand & machine-han
 players pick. Below these images are the players profile pictures. 
 
 And on the bottom there is a Div with the same darkcyan color, a height of 90px and a 100% width.
-Inside the div there are 4 round buttons 3 of witch has images nested inside them (Rock, paper, and scissors) The fouth button is yellow with the text reset (to reset the score) All buttons has a hover effect but with a darkred color instead.
+Inside the div there are 4 round buttons 3 of witch has images nested inside them (Rock, paper, and scissors) The forth button is yellow with the text reset (to reset the score) All buttons has a hover effect but with a darkred color instead.
 ## The Rock, paper, scissors Javascript:
 First off i declared all the global scope variables and linked them to their HTML elements.
 
@@ -197,7 +197,6 @@ photos of it below.
 The validator had a few opinions of my index.html the absence of alt attribute for the playerHand
 and computerHand images and some empty h1 or h2 and span elements but they are only empty until the 
 Javascript says otherwise.
-
 
 
 ![Rock,paper,scissors Responsive](assets/images/documentation/rpsresponsive.png)
