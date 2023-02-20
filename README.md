@@ -89,12 +89,20 @@ https://www.w3schools.com/
 
 https://codeinstitute.net/global/
 
+CSS formated by:
+https://www.cleancss.com/css-beautify/
+
 Code formated by:
 https://www.freeformatter.com/html-formatter.html#before-output
 
-Code validated by:
+HTML & CSS validated by:
 https://validator.w3.org/#validate_by_input
+
+Javascript validated by:
+https://jshint.com/
 
 Googles developer tools has also been a great resource.
 
-## Sources off information and images:
+## Sources off icons and images:
+https://icons8.com/ has contributed to every single image/icon used on the website.
+https://ui.dev/amiresponsive for the Images diplaying the project using different devices.
