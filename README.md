@@ -8,7 +8,7 @@ So the project contains two games a rock paper scissors game & A Tic tac toe gam
 HTML and CSS for structure and styling and Javascript for functionality.
 
 ## Purpose:
-Purpose, well most of all the purpose of this project was for me to learn Javascript.
+Purpose, well the primary goal or purpose of this project was for me to learn Javascript.
 And i did succesfully create two games that would probably have been considered less than mediocre in 1985 hehe.
 But Rome was not built in a day and neither is a great programmer! 
 ## The Rock paper scissors game HTML & CSS part:
@@ -154,11 +154,11 @@ So 3 seconds after completed game the game is reset but the score count is not.
 
 ## My personal thaught on the project
 The jump from Html & Css to Javascript was surprisingly challenging i gotta say. But for everyday that i worked on the project it made more and more sense. I think i almost finished the rock paper scissors game 10 times just to clear the whole JS file and redo the whole thing over and over again until it made sense. If you know html css and javascript you can get a job, atleast thats what a few dudes on youtube claims. So i did my best to try and learn as much as possible.
-But the clock is ticking and i gotta get started with the next project! All in all it was a great experience and project.
+But the clock is ticking and i gotta get started on the next project! All in all it was a great experience and project.
 I am certainly looking forward to the day that i will be working on something more exciting!
 
 ## Resources:
-the resources i have used to get this project done
+The resources i have used to get this project done
 
 My mentor Seun
 
@@ -193,12 +193,12 @@ https://ui.dev/amiresponsive for the Images diplaying the project using differen
 
 ## Formating, Validating, Testing & Final Photos
 The Html Css and Javascript has been validated by the resources mentioned above and there are 
-photos of it below. The index.html had a few opinions on the absence of 'alt=""' for the playerHand
-and computerHand images and some empty header and span elements but they are only empty until the 
+photos of it below.
+The validator had a few opinions of my index.html the absence of alt attribute for the playerHand
+and computerHand images and some empty h1 or h2 and span elements but they are only empty until the 
 Javascript says otherwise.
 
-The code has been tested by myself using dev tools and also through my mobile.
-The code is validated and formated both the css and the html has been approved.
+
 
 ![Rock,paper,scissors Responsive](assets/images/documentation/rpsresponsive.png)
 ![Tic tac Toe top of page Responsive](assets/images/documentation/tictactoetopresponsive.png)
