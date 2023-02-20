@@ -1,33 +1,25 @@
-Source to all images in this project: https://icons8.com/
 
-https://www.cleancss.com/css-beautify/
-https://jigsaw.w3.org/css-validator/validator
-https://validator.w3.org/#validate_by_input+with_options
-https://www.freeformatter.com/html-formatter.html#before-output
-https://www.freeformatter.com/javascript-beautifier.html#before-output
-https://jshint.com/
-https://ui.dev/amiresponsive
-
-
-![Top of home page](assets/img/1.1.png)
+![Top of home page](assets/images/documentation/rpsresponsive.png)
 # ManvsMachine.
-
+Play rock paper scissors & Tic tac toe against the computer.
 ## Introduction:
-
-The project is built with HTML & CSS.
-It is a website with the title: "Why Bitcoin is the best currency in the world".
-This is the website i wish i visited before i bought my first Bitcoin. It would have saved me alot of time and money.
-On the three pages there is information in the form off text, images and video. Regarding Bitcoins history, and the technology behind it. Why Bitcoin is good, and finally how to buy and how to store it.
+This was my second project using HTML & CSS and the first one using Javascript. 
+So the project contains two games a rock paper scissors game & Tic tac toe game on the second page.
+HTML and CSS for structure and styling and Javascript for functionality
 
 ## Purpose:
-The website is meant to be informative and helpful for the visitor. This is the website i wish i visited before i bought my first Bitcoin. It would have saved me alot of time and money.
-By the links, information and the media provided. The user gets instant access to the golden nuggets i eventually found after alot of trial and error. Also if a visitor was to use one of my links the user gets a little discount and i get a little pay day, WIN/WIN!
+Purpose, well most of all the purpose of this perticualar project was for me to learn some Javascript.
+And i did succesfully create two games that would probably have been considered less than mediocre in 1985 hehe.
+But Rome was not buildt in a day and neither is a great programmer! 
+## The Rock paper scissors game
+HTML & CSS part:
+Navbar at the top of the page with a height of 100px and a 100% width with a background color of darkcyan.
+in the navbar there are two anchor elements with 2 image elements nested inside them on icon displaying a handscissors
+and the other one a Tic tac toe game. The images are rounded and with a white background color, there is also a css
+hover effect turning the white background color slightly darker/gray when hovered.
 
-## The code:
 
-It is a responsive website customized for all devices. The website looks good while still basic. Colors are choosen to look nice and at the same time give the best possible user experience (while also aluding to the subject). All pages are structured the same way. The images and the video breaks up the text to give the reader a break, while still being informative.
 
-Navbar -> Text Heading -> Text Paragraph -> Media Content -> Text Heading -> Paragraph -> Media Content -> Footer.
 
 
 ## Navbar
@@ -39,29 +31,23 @@ Also changed the size of the font for smaller screen device.
 All off the media on the website is wrapped in a div, in order to make it responsive. There is a set max and minimum width and height and the content is displayed in the center of the browser.
 
 
-## Affiliate Links 
-There is a few affiliate links in the body on one of the pages. colored to be visible but smooth, When hovered the color changes, if they have been visited the color will also change. The links all opens in a new tab. 
 
 
-## Footer
-I changed the footers background color in order for it to be very clear. For a better user experience the font size is smaller for visitors with small screen devices.
-The footer contains a paragraph with a personal message from me, and my name as the author of the website.
-Underneath i declare the sources i used for both information and media. Each source is made up of an anchor tag that opens in a separate tab there is also a hovering effect on these. and lastly there is a paragraph acting as a disclaimer. I made it red so that its as visible as possible. The disclaimer encourages people to properly do their own research before investing and also warns the user about all the scams in the crypto space.
 
 ## Formating, Validating, Testing & Final Photos
 The code has been tested by myself using dev tools and also through my mobile.
 The code is validated and formated both the css and the html has been approved.
 
-![Top page 1](assets/img/1.1.png)
-![Middle page 1](assets/img/1.2.png)
-![Bottom page 1](assets/img/1.3.png)
-![Top page 2](assets/img/2.1.png)
-![Middle page 2](assets/img/2.2.png)
-![Bottom page 2](assets/img/2.3.png)
-![Top page 3](assets/img/3.1.png)
-![Middle page 3](assets/img/3.2.png)
-![Middle2 page 3](assets/img/3.3.png)
-![Bottom page 3](assets/img/3.4.png)
+![Rock,paper,scissors Responsive](assets/images/documentation/rpsresponsive.png)
+![Tic tac Toe top of page Responsive](assets/images/documentation/tictactoetopresponsive.png)
+![Tic tac toe bottom om page Responsive](assets/images/documentation/tictactoeresponsivenrtwo.png)
+![Rock,paper,scissors html validated](assets/images/documentation/rpshtmlvalidated.png)
+![Tic tac toe html validated](assets/images/documentation/tictactoehtmlvalidated.png)
+![CSS validated](assets/images/documentation/cssvalidated.png)
+![Rock,paper,scissors Javascript Validated one](assets/images/documentation/rpsvalidatedone.png)
+![Rock,paper,scissors Javascript Validated two](assets/images/documentation/rpsvalidatorimgtwo.png)
+![Tic tac toe JavaScript validated](assets/images/documentation/tictactoevalidatedone.png)
+![Tic tac toe JavaScript validated](assets/images/documentation/tictactoevalidatedtwo.png)
 
 
 
@@ -79,9 +65,15 @@ It will be a pleasure to continue on this path. The course has my full attention
 
 
 ## Resources:
-the resources i have used to learn how to code and work with github along the project:
+the resources i have used to get this project done
 
 My mentor Seun
+
+Open Ais chat GPT:
+https://chat.openai.com/chat
+This has been a complety incredible tool that i have used. NOT TO WRITE THE CODE FOR ME.
+But more like a teach. All doe i have credited some of the code to Chat GPT.
+
 
 https://www.youtube.com/ 
 
