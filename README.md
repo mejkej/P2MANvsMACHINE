@@ -39,6 +39,7 @@ I added a event listener to the reset button if clicked the let variables
 and the Const playerScore & const compScore.innerHTML displayes the let variables value.
 
 ### The main loop
+
 starts of with an Array from the const variable PossiblePicks. Array containing rock, paper & scisssors ofc.
 using a forEach loop and an arrow function possiblePicks turns in to possiblePick that has an eventlistener listening 
 for a click. the let variable playerPick gets assigned the e.targets.(ID) the id could be rock paper or scissors.
@@ -53,13 +54,25 @@ the loop then continues with:
   inside this function a const variable is declared called randomNumber. randomNumber = a method 
   "Math.floor(Math.random() * 3) + 1;
   Math.floor Makes the random number generated to a 0 - 1 or 2 and not 0,33 0,66 or 0,99.
-  The +1 makes make the possible numbers generated 1, 2, or 3 instead of 0, 1, or 2.
+  The +1 makes the possible numbers generated 1, 2, or 3 instead of 0, 1, or 2.
   Then there is 3 if statements pairing the random numbers to either rock paper or scissors.
+  If randomNumber === 1 compPick = rock and computerHand.src = 'assets/images/' + CompPick + '.png'.
 
   declareWinner
-  This function compares all the possible outcomes of a round and instructions on how to handle all possible outcomes
-  
+  In this function all the possible outcomes of a round is stated and how they should be handled.
+  So the picks gets compared and then the resultText.innerHtml Declares Win Loss or Draw.
 
+  scoreCount
+  This function handles the scoreboard by looking at the resultText.innerHtml messsage.
+  If the result text declares 'YOU WIN!' the let variable playerPoints increases by 1.
+  And that then results in that the const variable playerScore.innerHTML displays the value of
+  playerPoints and viceversa if the computer wins.
+ 
+  round
+  This function resets the SRC of the playerHand image & compHand image. It also clears the resultText.
+  So that after both players have made their Picks the result has been declared and the scoreboard has been
+  updated. Both playedhand images and result text is cleared indicating that its time to play the next round
+  while still keeping track of the Scoreboard.
 
 
 
