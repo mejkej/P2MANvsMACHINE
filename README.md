@@ -21,6 +21,46 @@ hover effect turning the white background color slightly darker/gray when hovere
 was very practical.
 
 ### The game area
+H1 element with the text "Rock Paper Scissors" on the top followed by the scoreboard consisting of a H1 element
+containing two span elements one for the players score one for the computers score. Underneath the scoreboard there
+is a H2 element with a span nested inside it, they are responsible for declaring the outcome of the game.
+
+Next up a Div containing two image elements with an id of man-hand & machine-hand. These images will display both
+players pick. Below these images are the players profile pictures. 
+
+And on the bottom there is a Div with the same darkcyan color, a height of 90px and a 100% width.
+Inside the div there are 4 round buttons 3 of witch has images nested inside them (Rock, paper, and scissors) The fouth button is yellow with the text reset (to reset the score) All buttons has a hover effect but with a darkred color instead.
+## The Rock, paper, scissors Javascript.
+First off i declared all the global scope variables and linked them to their HTML elements.
+
+### Reset score button
+I added a event listener to the reset button if clicked the let variables 
+'playerPoints' & 'compPoints' will be set to 0.
+and the Const playerScore & const compScore.innerHTML displayes the let variables value.
+
+### The main loop
+starts of with an Array from the const variable PossiblePicks. Array containing rock, paper & scisssors ofc.
+using a forEach loop and an arrow function possiblePicks turns in to possiblePick that has an eventlistener listening 
+for a click. the let variable playerPick gets assigned the e.targets.(ID) the id could be rock paper or scissors.
+playerHand.src gets assigned 'assets/images/' + playerPick + '.png'. (The path to the clicked image)
+the loop then continues with:
+  getCompPick();
+  declareWinner();
+  scoreCount();
+  round();
+
+  GetCompPick
+  inside this function a const variable is declared called randomNumber. randomNumber = a method 
+  "Math.floor(Math.random() * 3) + 1;
+  Math.floor Makes the random number generated to a 0 - 1 or 2 and not 0,33 0,66 or 0,99.
+  The +1 makes make the possible numbers generated 1, 2, or 3 instead of 0, 1, or 2.
+  Then there is 3 if statements pairing the random numbers to either rock paper or scissors.
+
+  declareWinner
+  This function compares all the possible outcomes of a round and instructions on how to handle all possible outcomes
+  
+
+
 
 
 

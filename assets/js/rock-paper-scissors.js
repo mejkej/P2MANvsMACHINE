@@ -4,7 +4,6 @@ const resultText = document.getElementById('text-result');
 const playerScore = document.getElementById('p-score');
 const compScore = document.getElementById('c-score');
 const possiblePicks = document.getElementsByClassName('possiblePick');
-
 const resetBtn = document.getElementById('reset-rps');
 
 // Reset Score 
