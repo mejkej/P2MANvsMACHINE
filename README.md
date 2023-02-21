@@ -1,5 +1,5 @@
-
 ![Top of home page](assets/images/documentation/rpsresponsive.png)
+[Link to the live project](https://mejkej.github.io/P2MANvsMACHINE/index.html)
 # ManvsMachine.
 Play rock paper scissors & Tic tac toe against the computer.
 ## Introduction:
@@ -197,7 +197,8 @@ photos of it below.
 The validator had a few opinions of my index.html the absence of alt attribute for the playerHand
 and computerHand images and some empty h1 or h2 and span elements but they are only empty until the 
 Javascript says otherwise.
-
+## Clone the project
+Incase anyone want to contribute to the project or develop it further [here are instructions on how to clone it](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository)
 
 ![Rock,paper,scissors Responsive](assets/images/documentation/rpsresponsive.png)
 ![Tic tac Toe top of page Responsive](assets/images/documentation/tictactoetopresponsive.png)
