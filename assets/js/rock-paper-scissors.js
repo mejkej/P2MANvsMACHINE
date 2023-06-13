@@ -30,13 +30,14 @@ Array.from(possiblePicks).forEach(possiblePick => possiblePick.addEventListener(
   scoreCount();
   round();
 }));
+
 // Resets the picked hands images and clears the result text after 1.5 seconds
 function round() {
   setTimeout(() => {
     resultText.innerHTML = '';
-    playerHand.src = '';
-    computerHand.src = '';
-  }, 1500);
+    playerHand.src = 'assets/images/sqr.png';
+    computerHand.src = 'assets/images/sqr.png';
+  }, 2000);
 }
 //Generating a randomized computer pick
 function getCompPick() {
