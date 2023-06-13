@@ -1,41 +1,60 @@
 <!DOCTYPE html> 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Man against machine!</title>
-  </head>
-  <body>
-    <!--Navbar, img/icons inside anchor links inside a div HTMl&CSS ONLY-->
-    <div class="navbar">
-      <a href="index.html"><img src="assets/images/rpsicon.png" alt="RPS icon"></a>
-      <a href="tic-tac-toe.html"><img src="assets/images/navttt.png" alt="TTT icon"></a>
-    </div>
-    <!--main game area consisting of HTML&CSS&JS-->
-    <h1>Rock Paper Scissors</h1>
-    <!--Score board & outcome declaration-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Rock Paper Scissors!</title>
+</head>
+<body>
+<header>
+  <!--Navbar, img/icons inside anchor links inside a div HTMl&CSS ONLY-->
+  <nav class="navbar">
+    <a href="index.html"><img src="assets/images/rpsicon.png" alt="RPS icon"></a>
+    <a href="tic-tac-toe.html"><img src="assets/images/navttt.png" alt="TTT icon"></a>
+  </nav>
+</header>
+
+<main>
+
+  <h1>Rock Paper Scissors</h1>
+
+  <!--Section for Score board & Result declaration-->
+  <section>
     <h1><span id="p-score">0</span>-<span id="c-score">0</span></h1>
     <h2><span id="text-result"></span></h2>
-    <!--img elements displaying players and computers pick-->
-    <div class="playedhands">
-      <img id="man-hand">
-      <img id="machine-hand">
+  </section>
+
+  <!--Section displaying player and computers picks-->
+  <section class="playedhands">
+    
+    <div>
+      <img src="" alt="" id="man-hand">
     </div>
-    <!--profile pictures-->
-    <div class="profilepics">
-      <img alt="player profile image" id="man-profile" src="assets/images/player.png">
-      <img alt ="computer profile image" id="machine-profile" src="assets/images/comp.png">
+
+    <div>
+      <img src="" alt="" id="machine-hand">
     </div>
-    <!--div with 4 relativly round buttons. Rock, paper and scissors. Also a reset button for the scoreboard :hover effect on all buttons-->
-    <div class="rps">
-      <button><img alt="rock" class="possiblePick" id="rock" src="assets/images/rock.png"></button>
-      <button><img alt="paper" class="possiblePick" id="paper" src="assets/images/paper.png"></button>
-      <button><img alt="scissors" class="possiblePick" id="scissors" src="assets/images/scissors.png"></button>
-      <button id="reset-rps">RESET</button>
-    </div>
-    <script src="assets/js/rock-paper-scissors.js"></script>
-  </body>
+
+  </section>
+
+  <!--Section displaying player and computers profile pictures-->
+  <section class="profilepics">
+    <img alt="player profile image" id="man-profile" src="assets/images/player.png">
+    <img alt ="computer profile image" id="machine-profile" src="assets/images/comp.png">
+  </section>
+
+    <!--Section with 4 relativly round buttons. Rock, paper and scissors. Also a reset button for the scoreboard :hover effect on all buttons-->
+  <section class="rps">
+    <button><img alt="rock" class="possiblePick" id="rock" src="assets/images/rock.png"></button>
+    <button><img alt="paper" class="possiblePick" id="paper" src="assets/images/paper.png"></button>
+    <button><img alt="scissors" class="possiblePick" id="scissors" src="assets/images/scissors.png"></button>
+    <button id="reset-rps">RESET</button>
+  </section>
+
+</main>
+<script src="assets/js/rock-paper-scissors.js"></script>
+</body>
 </html>
