@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="data:,">
-    <title>Man against machine!</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:,">
+  <title>Tic Tac Toe!</title>
   </head>
-  <body>
-    <!--Navbar, img/icons inside anchor links inside a div HTMl&CSS ONLY-->
-    <div class="navbar">
-      <a href="index.html"><img src="assets/images/rpsicon.png" alt="RPS icon"></a>
-      <a href="tic-tac-toe.html"><img src="assets/images/navttt.png" alt="TTT icon"></a>
-    </div>
-    <!--main game area consisting of HTML&CSS&JS-->
-    <h1>Tic Tac Toe</h1>
-    <!--scoreboard & message/outcome declaration text-->
+<body>
+<!--Navbar, img/icons inside anchor links inside a div HTMl&CSS ONLY-->
+<header>
+  <nav class="navbar">
+    <a href="index.html"><img src="assets/images/rpsicon.png" alt="RPS icon"></a>
+    <a href="tic-tac-toe.html"><img src="assets/images/navttt.png" alt="TTT icon"></a>
+  </nav>
+</header>
+
+<main>
+
+  <h1>Tic Tac Toe</h1>
+
+  <!--scoreboard & result declaration text-->  
+  <section>
     <h2 id="message">Click on a square</h2>
     <h1><span id="playerScore">0</span>-<span id="compScore">0</span></h1>
-    <div id="board">
-      <!--the game board consisting of 9 img elements and 4 divs-->
-      <div class="top">
-        <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="0" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="1" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="2" class="square">
-      </div>
-      <div class="mid">
-        <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="3" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="4" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="5" class="square">
-      </div>
-      <div class="bot">
-        <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="6" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="7" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="8" class="square">
-      </div>
+  </section>
+
+  <!--Section containing the whole game board-->
+  <section id="board">
+      
+    <div class="top">
+      <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="0" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="1" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="2" class="square">
     </div>
-    <!--Div with a reset button to reset the score-->
-    <div id="btnbgcolor">
-      <button id="ttt-resetBtn">RESET</button>
+
+    <div class="mid">
+      <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="3" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="4" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="5" class="square">
     </div>
-    <script src="assets/js/tic-tac-toe.js"></script>
-  </body>
+
+    <div class="bot">
+      <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="6" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="7" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="8" class="square">
+    </div>
+
+  </section>
+
+    <!--section with a reset button to reset the score-->
+  <section id="btnbgcolor">
+    <button id="ttt-resetBtn">RESET</button>
+  </section>
+
+</main>
+<script src="assets/js/tic-tac-toe.js"></script>
+</body>
 </html>
