@@ -70,7 +70,11 @@ button:hover{
 #reset-rps:hover{
     background-color:darkred;
 }
+
 /*TIC TAC TOE CSS BELOW*/
+.startmessage {
+    color:green;
+}
 .top .mid .bot{
     display:flex;
     min-height:70px;
@@ -89,11 +93,13 @@ button:hover{
     height:100px;
     width:100px;
 }
+
 .color{
     height:90px;
     width:100%;
     background-color:darkcyan;
 }
+
 #ttt-resetBtn {
     font-size:100%;
     margin-top:20px;
@@ -103,14 +109,17 @@ button:hover{
     BORDER:10PX;
     background-color:yellow;
 }
+
 #ttt-resetBtn:hover{
     background-color:darkred;
 }
+
 #btnbgcolor{
     height:90px;
     width:100%;
     background-color:darkcyan;
 }
+
 /*media screen for small phones. Since developer tools smallest fixed unit was 320px i thaught that was the magic limit number but since reading the feedback on my previous project i made a few adjustments */
 @media screen and (max-width: 310px) {
     .square{
