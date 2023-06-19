@@ -37,7 +37,7 @@ function round() {
     resultText.innerHTML = '';
     playerHand.src = 'assets/images/sqr.png';
     computerHand.src = 'assets/images/sqr.png';
-  }, 2000);
+  }, 3000);
 }
 //Generating a randomized computer pick
 function getCompPick() {
