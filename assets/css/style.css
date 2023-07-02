@@ -124,19 +124,13 @@ button:hover{
     width:100px;
 }
 
-.color{
-    height:90px;
-    width:100%;
-    background-color:darkcyan;
-}
-
 #ttt-resetBtn {
-    font-size:100%;
+    width:100px;
+    height:50px;
+    font-size:120%;
     margin-top:20px;
-    border-radius:50%;
+    border-radius:20px;
     justify-content: center;
-    PADDING:15PX;
-    BORDER:10PX;
     background-color:yellow;
 }
 
@@ -144,10 +138,10 @@ button:hover{
     background-color:darkred;
 }
 
-#bottomsection{
-    position:relative;
-    height:auto;
+.tttresetbtnsection{
+    margin-top:20px;
     width:100%;
+    height:100px;
     background-color:darkcyan;
 }
 
