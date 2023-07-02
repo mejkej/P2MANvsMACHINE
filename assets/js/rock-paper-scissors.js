@@ -5,6 +5,7 @@ const playerScore = document.getElementById('p-score');
 const compScore = document.getElementById('c-score');
 const possiblePicks = document.getElementsByClassName('possiblePick');
 const resetBtn = document.getElementById('reset-rps');
+const infoSpan = document.getElementById('info');
 
 // Reset Score 
 resetBtn.addEventListener('click', function () {
@@ -31,13 +32,13 @@ Array.from(possiblePicks).forEach(possiblePick => possiblePick.addEventListener(
   round();
 }));
 
-// Resets the picked hands images and clears the result text after 1.5 seconds
+// Resets the picked hands images and clears the result text after 2 seconds
 function round() {
   setTimeout(() => {
     resultText.innerHTML = '';
     playerHand.src = 'assets/images/sqr.png';
     computerHand.src = 'assets/images/sqr.png';
-  }, 3000);
+  }, 2000);
 }
 //Generating a randomized computer pick
 function getCompPick() {
