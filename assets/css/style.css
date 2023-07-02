@@ -70,6 +70,7 @@ main {
     border-radius:25px;
     margin:1%;
     padding:1%;
+    margin-top:10px;
 }
 
 button:hover{
@@ -87,7 +88,7 @@ button:hover{
     height:50px;
     background-color:yellow;
     border-radius:15px;
-
+    font-size: 120%;
 }
 
 #reset-rps:hover{
