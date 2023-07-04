@@ -107,26 +107,21 @@ button:hover{
 
 
 /*TIC TAC TOE CSS BELOW*/
-.startmessage {
-    color:green;
+
+.boardsection {
+    width:320px;
+    max-width:80vw;
+    align-self: center;
 }
+
 .top .mid .bot{
     display:flex;
-    min-height:70px;
-    min-width:70px;
-    max-width:320px;
-    max-height:100px;
     margin:2px;
-    border:2px;
-    border-color:darkcyan;
-    color:darkcyan;
+
 }
 .square{
-    align-items: center;
-    max-height:100px;
-    max-width:100px;
-    height:100px;
-    width:100px;
+    max-width: 100px;
+    width:25vw;
 }
 
 .square:hover {
@@ -153,20 +148,4 @@ button:hover{
     width:100%;
     height:100px;
     background-color:darkcyan;
-}
-
-/*media screen for small phones. Since developer tools smallest fixed unit was 320px i thaught that was the magic limit number but since reading the feedback on my previous project i made a few adjustments */
-@media screen and (max-width: 310px) {
-    .square{
-        height:70px;
-        width:70px;
-   }
-    .profilepics{
-        display:flex;
-   }
-    .profilepics img{
-        display:inline-flex;
-        margin:0;
-        border:0;
-   }
 }
