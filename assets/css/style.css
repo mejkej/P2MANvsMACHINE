@@ -17,6 +17,7 @@ body{
 }
 
 .navbar a {
+    border:2px solid black;
     padding:10px;
     margin-top:15px;
     margin-bottom:15px;
@@ -67,7 +68,8 @@ main {
 }
 
 .rpsbtnssection button{
-    border-radius:25px;
+    border:2px solid black;
+    border-radius:10px;
     margin:1%;
     padding:1%;
     margin-top:10px;
@@ -82,13 +84,16 @@ button:hover{
     padding:20px;
 }
 
+
 #reset-rps{
+    border:2px solid black;
     align-self: center;
     width:100px;
     height:50px;
     background-color:yellow;
-    border-radius:15px;
     font-size: 120%;
+    border-radius:10px;
+
 }
 
 #reset-rps:hover{

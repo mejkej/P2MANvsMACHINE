@@ -5,7 +5,7 @@ const playerScore = document.getElementById('p-score');
 const compScore = document.getElementById('c-score');
 const possiblePicks = document.getElementsByClassName('possiblePick');
 const resetBtn = document.getElementById('reset-rps');
-const infoSpan = document.getElementById('info');
+const rpsMsg = document.querySelector('.rpsmsg');
 
 // Reset Score 
 resetBtn.addEventListener('click', function () {
@@ -13,7 +13,10 @@ resetBtn.addEventListener('click', function () {
   compPoints = 0;
   playerScore.innerHTML = playerPoints;
   compScore.innerHTML = compPoints;
+  rpsMsg.innerHTML = 'Click on a button above to start playing';
+  rpsMsg.style.color = 'orange';
 });
+
 
 
 let playerPoints = 0;
@@ -22,10 +25,14 @@ let compPoints = 0;
 let playerPick;
 let compPick;
 
-//main loop! 
+rpsMsg.innerHTML = 'Click on a button above to start playing';
+rpsMsg.style.color = 'orange';
+
+//main loop!
 Array.from(possiblePicks).forEach(possiblePick => possiblePick.addEventListener('click', (e) => {
   playerPick = e.target.id;
   playerHand.src = 'assets/images/' + playerPick + '.png';
+  rpsMsg.innerHTML = '';
   getCompPick();
   declareWinner();
   scoreCount();
