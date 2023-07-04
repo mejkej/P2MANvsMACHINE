@@ -13,7 +13,7 @@ resetBtn.addEventListener('click', function () {
   compPoints = 0;
   playerScore.innerHTML = playerPoints;
   compScore.innerHTML = compPoints;
-  rpsMsg.innerHTML = 'Click on a button above to start playing';
+  rpsMsg.innerHTML = 'Start playing, click on your pick.';
   rpsMsg.style.color = 'orange';
 });
 
@@ -25,7 +25,7 @@ let compPoints = 0;
 let playerPick;
 let compPick;
 
-rpsMsg.innerHTML = 'Click on a button above to start playing';
+rpsMsg.innerHTML = 'Start playing, click on your pick.';
 rpsMsg.style.color = 'orange';
 
 //main loop!
