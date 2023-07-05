@@ -19,13 +19,13 @@
   </nav>
 </header>
 
-<main class="tttmain">
+<main>
 
   <h1>Tic Tac Toe</h1>
 
   <!--scoreboard & result declaration text-->  
   <section>
-    <h2 id="message">Click on a square to start the game.</h2>
+    <h2 id="message"></h2>
     <h1><span id="playerscore">0</span>-<span id="compscore">0</span></h1>
   </section>
 
@@ -33,21 +33,22 @@
   <section class="boardsection">
       
     <div class="top">
-      <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="0" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="1" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="2" class="square">
+      <img data-symbol="" alt="square" src="assets/images/sqr.png" id="0" class="square"> <img data-symbol="" alt="square" src="assets/images/sqr.png" id="1" class="square"> <img data-symbol="" alt="square" src="assets/images/sqr.png" id="2" class="square">
     </div>
 
     <div class="mid">
-      <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="3" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="4" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="5" class="square">
+      <img data-symbol="" alt="square" src="assets/images/sqr.png" id="3" class="square"> <img data-symbol="" alt="square" src="assets/images/sqr.png" id="4" class="square"> <img data-symbol="" alt="square" src="assets/images/sqr.png" id="5" class="square">
     </div>
 
     <div class="bot">
-      <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="6" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="7" class="square"> <img data-symbol="" alt="free square" src="assets/images/sqr.png" id="8" class="square">
+      <img data-symbol="" alt="square" src="assets/images/sqr.png" id="6" class="square"> <img data-symbol="" alt="square" src="assets/images/sqr.png" id="7" class="square"> <img data-symbol="" alt="square" src="assets/images/sqr.png" id="8" class="square">
     </div>
 
   </section>
 
-    <!--section with a reset button to reset the score-->
+  <!--section with a reset button to reset the score-->
   <section class="tttresetbtnsection">
+    <h2 id="tttstartmsg">Click on a square to start the game.</h2>
     <button id="ttt-resetBtn">Reset Score</button>
   </section>
 

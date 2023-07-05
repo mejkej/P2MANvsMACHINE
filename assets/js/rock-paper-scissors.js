@@ -13,8 +13,6 @@ resetBtn.addEventListener('click', function () {
   compPoints = 0;
   playerScore.innerHTML = playerPoints;
   compScore.innerHTML = compPoints;
-  rpsMsg.innerHTML = 'Start playing, click on your pick.';
-  rpsMsg.style.color = 'orange';
 });
 
 
@@ -25,8 +23,6 @@ let compPoints = 0;
 let playerPick;
 let compPick;
 
-rpsMsg.innerHTML = 'Start playing, click on your pick.';
-rpsMsg.style.color = 'orange';
 
 //main loop!
 Array.from(possiblePicks).forEach(possiblePick => possiblePick.addEventListener('click', (e) => {
@@ -69,6 +65,7 @@ function scoreCount() {
     playerScore.innerHTML = playerPoints;
 
   }
+
   if (resultText.innerHTML === 'YOU LOSE!') {
     compPoints++;
     compScore.innerHTML = compPoints;
@@ -81,7 +78,7 @@ function declareWinner() {
     resultText.innerHTML = 'DRAW!';
   }
   if (compPick === 'rock' && playerPick === 'paper') {
-    resultText.innerHTML = 'YOU WIN!';
+    resultText.innerHTML = 'YOU WIN!'; 
   }
   if (compPick === 'paper' && playerPick === 'scissors') {
     resultText.innerHTML = 'YOU WIN!';

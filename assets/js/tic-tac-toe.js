@@ -1,5 +1,6 @@
 const squares = document.getElementsByClassName('square');
 const message = document.getElementById('message');
+const startMsg = document.getElementbyId('tttstartmsg');
 const resetBtn = document.getElementById('ttt-resetBtn');
 const playerSymbol = 'x';
 const computerSymbol = 'o';
@@ -32,6 +33,7 @@ function handleClick(event) {
   if (event.target.getAttribute('data-symbol') === '') {
     event.target.src = 'assets/images/x.png';
     event.target.setAttribute('data-symbol', playerSymbol);
+    startMsg.style.display = 'none';
     resultDetector();
     getCompPick();
     resultDetector();
@@ -59,6 +61,7 @@ function getCompPick() {
   unPickedSquare[randomNumber].src = 'assets/images/o.png';
   unPickedSquare[randomNumber].setAttribute('data-symbol', computerSymbol);
 }
+
 //The code in this function has been generated from chatGPT
 function resultDetector() {
   let winner = null;
@@ -80,6 +83,7 @@ function resultDetector() {
     message.innerHTML = 'Draw!';
   }
 }
+
 //Score keeper  
 function scoreKeeper() {
   if (message.innerHTML === 'You Win!') {

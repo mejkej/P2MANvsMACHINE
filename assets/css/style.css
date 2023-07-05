@@ -26,7 +26,6 @@ body{
     background-color:azure;
 }
 
-
 .navbar a:hover{
     background-color:darkgray;
 }
@@ -105,6 +104,10 @@ button:hover{
     padding:30%;
 }
 
+.rpsmsg {
+    display:block;
+    color:orange;
+}
 
 /*TIC TAC TOE CSS BELOW*/
 
@@ -128,11 +131,17 @@ button:hover{
     background-color: darkgray;
 }
 
+#tttstartmsg {
+    display:block;
+    color:orange;
+}
+
 #ttt-resetBtn {
     width:100px;
     height:50px;
     font-size:120%;
     margin-top:20px;
+    margin-bottom:20px;
     border:2px solid black;
     border-radius:10px;
     justify-content: center;
@@ -146,6 +155,6 @@ button:hover{
 .tttresetbtnsection{
     margin-top:20px;
     width:100%;
-    height:100px;
+    height:max-content;
     background-color:darkcyan;
 }
