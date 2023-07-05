@@ -131,7 +131,7 @@ button:hover{
     background-color: darkgray;
 }
 
-#tttstartmsg {
+.tttstartmsg {
     display:block;
     color:orange;
 }
