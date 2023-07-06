@@ -59,9 +59,12 @@ for (let i = 0; i < squares.length; i++) {
 // generating a computer pick by filtering out the picked squares and then getting a randomized pick of available ones
 function getCompPick() {
   const unPickedSquare = Array.from(squares).filter(square => square.getAttribute('data-symbol') === '');
-  const randomNumber = Math.floor(Math.random() * unPickedSquare.length);
-  unPickedSquare[randomNumber].setAttribute('src' == 'assets/images/o.png');
-  unPickedSquare[randomNumber].setAttribute('data-symbol', computerSymbol);
+
+  if(unPickedSquare.length > 0) {
+    const randomNumber = Math.floor(Math.random() * unPickedSquare.length);
+    unPickedSquare[randomNumber].setAttribute('src', 'assets/images/o.png');
+    unPickedSquare[randomNumber].setAttribute('data-symbol', computerSymbol);
+  }
 }
 
 //The code in this function has been generated from chatGPT
@@ -78,23 +81,23 @@ function resultDetector() {
   }
 
   if (winner === playerSymbol) {
-    (message.innerHTML == 'You Win!');
+    (message.innerHTML = 'You Win!');
   } else if (winner === computerSymbol) {
-    (message.innerHTML == 'You Lost!');
+    (message.innerHTML = 'You Lost!');
   } else if (Array.from(squares).every(square => square.getAttribute('data-symbol') !== '')) {
-    (message.innerHTML == 'Draw!');
+    (message.innerHTML = 'Draw!');
   }
 };
 
-//Score keeper  
+//Score keeper
 function scoreKeeper() {
   if (message.innerHTML === 'You Win!') {
     playerScore++;
-    playerScoreDisplay.innerHTML == playerScore;
+    playerScoreDisplay.innerHTML = playerScore;
   }
   if (message.innerHTML === 'You Lost!') {
     computerScore++;
-    computerScoreDisplay.innerHTML == computerScore;
+    computerScoreDisplay.innerHTML = computerScore;
   }
 }
 // this function resets the squares 3 seconds after outcome has been declared while not reseting the score
