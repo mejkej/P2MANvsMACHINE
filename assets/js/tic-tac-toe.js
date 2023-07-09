@@ -15,8 +15,8 @@ const waysToWin = [
   [2, 4, 6]
 ];
 
-const playerScoreDisplay = document.getElementById('playerScore');
-const computerScoreDisplay = document.getElementById('computerScore');
+const playerScoreDisplay = document.getElementById('playerscore');
+const computerScoreDisplay = document.getElementById('compscore');
 let playerScore = 0;
 let computerScore = 0;
 
@@ -56,6 +56,7 @@ function gameOver() {
 for (let i = 0; i < squares.length; i++) {
   squares[i].addEventListener('click', handleClick);
 }
+
 // generating a computer pick by filtering out the picked squares and then getting a randomized pick of available ones
 function getCompPick() {
   const unPickedSquare = Array.from(squares).filter(square => square.getAttribute('data-symbol') === '');
@@ -72,7 +73,7 @@ function resultDetector() {
   let winner = null;
   for (let i = 0; i < waysToWin.length; i++) {
     const [a, b, c] = waysToWin[i];
-    if (squares[a].getAttribute('data-symbol' !== '') &&
+    if(squares[a].getAttribute('data-symbol') !== '' &&
       squares[a].getAttribute('data-symbol') === squares[b].getAttribute('data-symbol') &&
       squares[a].getAttribute('data-symbol') === squares[c].getAttribute('data-symbol')) {
       winner = squares[a].getAttribute('data-symbol');
@@ -82,25 +83,30 @@ function resultDetector() {
 
   if (winner === playerSymbol) {
     (message.innerHTML = 'You Win!');
+    return true;
   } else if (winner === computerSymbol) {
     (message.innerHTML = 'You Lost!');
+    return true;
   } else if (Array.from(squares).every(square => square.getAttribute('data-symbol') !== '')) {
     (message.innerHTML = 'Draw!');
+    return true;
   }
+  return false;
 };
 
 //Score keeper
 function scoreKeeper() {
-  if (message.innerHTML === 'You Win!') {
+  if(message.innerHTML === 'You Win!') {
     playerScore++;
     playerScoreDisplay.innerHTML = playerScore;
   }
-  if (message.innerHTML === 'You Lost!') {
+  if(message.innerHTML === 'You Lost!') {
     computerScore++;
     computerScoreDisplay.innerHTML = computerScore;
   }
 }
-// this function resets the squares 3 seconds after outcome has been declared while not reseting the score
+
+// this function resets the squares 2 seconds after outcome has been declared while not reseting the score
 function round() {
   setTimeout(() => {
     if (message.innerHTML === 'You Win!' || message.innerHTML === 'You Lost!' || message.innerHTML === 'Draw!') {
@@ -110,5 +116,5 @@ function round() {
         squares[i].addEventListener('click', handleClick);
       }
     }
-  }, 3000);
+  }, 2000);
 }
