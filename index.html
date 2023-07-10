@@ -11,7 +11,7 @@
 
 <body>
 
-<!--Header, Navbar, img/icons inside anchor links-->
+<!--Header > Navigation Menu. Img elements nested in anchor tags-->
 <header>
   <nav class="navbar">
     <a href="index.html"><img src="assets/images/rpsicon.png" alt="Rock Paper Scissors"></a>
@@ -41,16 +41,19 @@
     <img alt ="computer profile image" id="machine-profile" src="assets/images/comp.png">
   </section>
 
-  <!--Section with four buttons. Rock, paper & Scissors. Reset button for the scoreboard :hover effect on all buttons-->
+  <!--Section with three buttons & Nested imgs. Rock, paper & Scissors.-->
   <section class="rpsbtnssection">
     <button><img alt="rock" class="possiblePick" id="rock" src="assets/images/rock.png"></button>
     <button><img alt="paper" class="possiblePick" id="paper" src="assets/images/paper.png"></button>
     <button><img alt="scissors" class="possiblePick" id="scissors" src="assets/images/scissors.png"></button>
   </section>
+
+  <!--Div containing guiding start message & Reset button for the scoreboard-->
   <div class="resetrpsbtndiv">
     <h2 class="rpsmsg">Click on the weapon of your choice to start the game.</h2>
     <button id="reset-rps">Reset Score</button>
   </div>
+
 </main>
 <script src="assets/js/rock-paper-scissors.js"></script>
 </body>

@@ -11,7 +11,7 @@
 
 <body>
 
-<!--Navbar, img/icons inside anchor links inside a div HTMl&CSS ONLY-->
+<!--Header > Navigation Menu. Img elements nested in anchor tags-->
 <header>
   <nav class="navbar">
     <a href="index.html"><img src="assets/images/rpsicon.png" alt="Rock Paper Scissors"></a>
@@ -19,17 +19,18 @@
   </nav>
 </header>
 
+<!--Main wrapping the entier page below the navigation-->
 <main>
 
   <h1>Tic Tac Toe</h1>
 
-  <!--scoreboard & result declaration text-->  
+  <!--Section for Score board & Result declaration-->  
   <section>
     <h2 id="message"></h2>
     <h1><span id="playerscore">0</span>-<span id="compscore">0</span></h1>
   </section>
 
-  <!--Section containing the whole game board-->
+  <!--Section containing the whole game board board, by using three divs each nesting three img elements.-->
   <section class="boardsection">
       
     <div class="top">
@@ -46,7 +47,7 @@
 
   </section>
 
-  <!--section with a reset button to reset the score-->
+  <!--section with a guiding start message & Reset button to reset the score-->
   <section class="tttresetbtnsection">
     <h2 class="tttstartmsg">Click on a square to start the game.</h2>
     <button id="ttt-resetBtn">Reset Score</button>

@@ -225,7 +225,10 @@ The validator had a few opinions of my index.html the absence of alt attribute f
 and computerHand images and some empty h1 or h2 and span elements but they are only empty until the 
 Javascript says otherwise.
 ## Clone the project
-Incase anyone want to contribute to the project or develop it further [here are instructions on how to clone it](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository)
+Incase anyone want to contribute to the project or develop it further here is a step by step guide:
+1. Write.
+2. 
+ [here are instructions on how to clone it](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository)
 
 ![Rock,paper,scissors Responsive](assets/images/documentation/rpsresponsive.png)
 ![Tic tac Toe top of page Responsive](assets/images/documentation/tictactoetopresponsive.png)
