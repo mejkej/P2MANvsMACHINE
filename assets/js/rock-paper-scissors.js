@@ -16,7 +16,6 @@ resetBtn.addEventListener('click', function () {
 });
 
 
-
 let playerPoints = 0;
 let compPoints = 0;
 
