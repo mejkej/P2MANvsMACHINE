@@ -13,23 +13,30 @@ And i did succesfully create two games that would probably have been considered 
 But Rome was not built in a day and neither is a great programmer! 
 ## The Rock paper scissors game HTML & CSS part:
 ### Navbar
-The navbar located at the top of the page is a Div element with a height of 100px and a 100% width with a
-background color of darkcyan.
-In the Div there are two anchor elements each with a image element nested inside them one icon displaying a handscissor
-and the other one a Tic tac toe board. The images are rounded and with a white background color, there is also a css
-hover effect turning the white background color slightly darker/gray when hovered. First time i used css flex and it 
+Header > Nav > Anchor. The two existing anchor elements wraps an img each. Headers background color set to darkcyan. Width = 100vw, height = 100px.
+hover effect turning the white background color slightly darker/gray when hovered.
+First time i used css flex and it 
 was very practical.
 
-### The game area
-H1 element with the text "Rock Paper Scissors" on the top followed by the scoreboard consisting of a H1 element
-containing two span elements one for the players score one for the computers score. Underneath the scoreboard there
-is a H2 element with a span nested inside it, they are responsible for declaring the outcome of the game.
+### Main (everything below header)
+#### H1 text "Rock Paper Scissors"
 
-Next up a Div containing two image elements with an id of man-hand & machine-hand. These images will display both
-players pick. Below these images are the players profile pictures. 
+#### First Section Scoreboard & Result declaration
+H1 with two spans default displaying 0-0
+H2 with a nested span that declares the outcome of the game.
 
-And on the bottom there is a Div with the same darkcyan color, a height of 90px and a 100% width.
-Inside the div there are 4 round buttons 3 of witch has images nested inside them (Rock, paper, and scissors) The forth button is yellow with the text reset (to reset the score) All buttons has a hover effect but with a darkred color instead.
+#### Second Section 
+Contains two img elements. Either displaying a default image or the player and the computers picks.
+
+#### Thrid Section
+Contains two img elements. The player and the computers "profile pictures".
+
+#### Fourth Section
+Contains 3 buttons:
+Rock, paper and scissors. Img element nested inside the buttons.
+
+#### Div container 
+Contains a  H2 that acts as a guiding start message. Below it is a button that resets the score.
 ## The Rock, paper, scissors Javascript:
 First off i declared all the global scope variables and linked them to their HTML elements.
 
@@ -45,6 +52,7 @@ using a forEach loop and an arrow function possiblePicks turns in to possiblePic
 for a click. the let variable playerPick gets assigned the e.targets.(ID) the id could be rock paper or scissors.
 playerHand.src gets assigned 'assets/images/' + playerPick + '.png'. (The path to the clicked image)
 the loop then continues with:
+  Setting the string of the guiding start message (rpsMsg) to be empty.
   getCompPick();
   declareWinner();
   scoreCount();
