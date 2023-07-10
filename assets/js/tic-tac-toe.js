@@ -106,7 +106,7 @@ function scoreKeeper() {
   }
 }
 
-// this function resets the squares 2 seconds after outcome has been declared while not reseting the score
+// round function resets the squares 2 seconds after outcome has been declared while not reseting the score
 function round() {
   if (resultDetector()) {
     setTimeout(() => {
