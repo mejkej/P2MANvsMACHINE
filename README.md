@@ -4,7 +4,7 @@
 Play rock paper scissors & Tic tac toe against the computer.
 ## Introduction:
 This was my second project using HTML & CSS and the first one using Javascript. 
-So the project contains two games a rock paper scissors game & A Tic tac toe game on the second page.
+So the project contains two games, rock paper scissors & Tic tac toe.
 HTML and CSS for structure and styling and Javascript for functionality.
 
 ## Purpose:
@@ -13,30 +13,30 @@ And i did succesfully create two games that would probably have been considered 
 But Rome was not built in a day and neither is a great programmer! 
 ## The Rock paper scissors game HTML & CSS part:
 ### Navbar
-Header > Nav > Anchor. The two existing anchor elements wraps an img each. Headers background color set to darkcyan. Width = 100vw, height = 100px.
-hover effect turning the white background color slightly darker/gray when hovered.
-First time i used css flex and it 
-was very practical.
+Header > Nav > Anchor. The two existing anchor elements wraps an img each. Headers background color set to darkcyan. The width is 100vw & The height is 100px. The a/img elements are styled to be round and has a 2 px solid black border.
+Also hover effect turning the white background color darker/gray when hovered.
+First time i used css flex and it was very practical.
 
-### Main (everything below header)
+### Main (Wrapping everything below the header)
 #### H1 text "Rock Paper Scissors"
 
 #### First Section Scoreboard & Result declaration
-H1 with two spans default displaying 0-0
+H1 with two spans the by default displays 0-0.
 H2 with a nested span that declares the outcome of the game.
 
-#### Second Section 
+#### Second Section (Pick display)
 Contains two img elements. Either displaying a default image or the player and the computers picks.
 
-#### Thrid Section
+#### Thrid Section (Profile Pictures)
 Contains two img elements. The player and the computers "profile pictures".
 
 #### Fourth Section
-Contains 3 buttons:
-Rock, paper and scissors. Img element nested inside the buttons.
+Sections background color is set to darkcyan and the width is set to 100 vw.
+Contains three buttons:
+Rock, paper and scissors. Img element nested inside the buttons. The buttons are styled with a black solid border of 2 px, They are slightly rounded with a border radius of 10 px and has a hover effect changing the white background color to darkred. 
 
 #### Div container 
-Contains a  H2 that acts as a guiding start message. Below it is a button that resets the score.
+Contains a  H2 that acts as a guiding start message. Below it is a button that resets the score. This button has a yellow background color, and are wider than the buttons above. The rest of the styling is the same as the buttons above.
 ## The Rock, paper, scissors Javascript:
 First off i declared all the global scope variables and linked them to their HTML elements.
 
@@ -50,9 +50,9 @@ and the Const playerScore & const compScore.innerHTML displayes the let variable
 starts of with an Array from the const variable PossiblePicks. Array containing rock, paper & scisssors ofc.
 using a forEach loop and an arrow function possiblePicks turns in to possiblePick that has an eventlistener listening 
 for a click. the let variable playerPick gets assigned the e.targets.(ID) the id could be rock paper or scissors.
-playerHand.src gets assigned 'assets/images/' + playerPick + '.png'. (The path to the clicked image)
-the loop then continues with:
-  Setting the string of the guiding start message (rpsMsg) to be empty.
+playerHand.src gets assigned 'assets/images/' + playerPick + '.png'. (The path to the clicked image).
+rpsMsg.innerHTML = ''; (Setting the string of the guiding start message to be empty)
+The loop then continues with:
   getCompPick();
   declareWinner();
   scoreCount();
@@ -87,13 +87,18 @@ the loop then continues with:
   ### The Navbar 
   Its exacly the same as on the other page.
 
-  ### The Game area
-  H1 Element with the text "Tic Tac Toe". Below the header there is a H2 element with with the text "Click on a square".
-  Below that one there is a H1 element with two spans nested inside of it, this is the Scoreboard.
-  
-  Then comes the Gameboard consisting of 4 divs and 9 image elements. So there are three divs wrapping 3 inline image elements each. The forth div wraps around them all. The squares are 100px wide and high unless you are using a screen smaller than 310pxs wide. Then they will be 70x70 px.
+  ### Main (Wrapping everything below the header)
+  #### H1 text "Tic Tac Toe"
 
-  Below there is a div with the same color as the navbar but this div does only contain one button. Button alignment is centered and the shape is oval. Color is yellow with the black text, 'RESET'. Just like the buttons in the other game there is a hover effect. I Tryed to keep the styling consistant on both pages. 
+  #### Section for Scoreboard & Result declaration.
+  H2 declaring the games outcome. 
+  H1 with two nested spans default displaying 0-0.
+
+  #### Section two, The gameboard.
+  Contains three divs, top, mid and bot. Each div contains three img elements each img element is a square on the board. The img displays an unpicked square by default, but if picked the src and data-symbol will change depending on who picked the square.
+  
+  #### Third Section, Guide message & Reset Score Btn
+  Sections background color is set to match the Header and contains: H2 element acting as a guiding start message & Button with the text "Reset Score".
 
 ## The Tic tac toe games Javascript:
 ### Cached the dom
