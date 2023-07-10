@@ -157,6 +157,28 @@ The jump from Html & Css to Javascript was surprisingly challenging i gotta say.
 But the clock is ticking and i gotta get started on the next project! All in all it was a great experience and project.
 I am certainly looking forward to the day that i will be working on something more exciting!
 
+# Re-submission
+
+### Issues pointed out and fixed 
+
+#### HTML
+1. Lack of semantic html elements.
+2. Broken images (Failed HTML Validation)
+2. Webpage titles
+
+#### Tic Tac Toe javascript
+1. 
+
+#### README file
+1. 
+
+#### Lack of git commit messages
+
+#### Other feedback
+1. Lack of clear visual feedback to users.
+2. Improved testing
+
+
 ## Resources:
 The resources i have used to get this project done
 
