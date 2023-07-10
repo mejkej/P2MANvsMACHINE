@@ -36,20 +36,21 @@ function handleClick(event) {
     event.target.src = 'assets/images/x.png';
     startMsg.style.display = 'none';
     event.target.setAttribute('data-symbol', playerSymbol);
-    resultDetector();
-    getCompPick();
-    resultDetector();
+    if(!resultDetector()) {
+      getCompPick();
+      resultDetector();
+    }
     gameOver();
     scoreKeeper();
-    round();
   }
 }
 
 function gameOver() {
-  if (message.innerHTML === 'You Win!' || message.innerHTML === 'You Lost!') {
+  if (message.innerHTML === 'You Win!' || message.innerHTML === 'You Lost!' || message.innerHTML === 'Draw!') {
     for (let i = 0; i < squares.length; i++) {
       squares[i].removeEventListener('click', handleClick);
     }
+    round();
   }
 }
 
@@ -91,7 +92,6 @@ function resultDetector() {
     (message.innerHTML = 'Draw!');
     return true;
   }
-  return false;
 };
 
 //Score keeper
@@ -108,13 +108,18 @@ function scoreKeeper() {
 
 // this function resets the squares 2 seconds after outcome has been declared while not reseting the score
 function round() {
-  setTimeout(() => {
-    if (message.innerHTML === 'You Win!' || message.innerHTML === 'You Lost!' || message.innerHTML === 'Draw!') {
+  if (resultDetector()) {
+    setTimeout(() => {
       for (let i = 0; i < squares.length; i++) {
         squares[i].src = 'assets/images/sqr.png';
         squares[i].setAttribute('data-symbol', '');
+      }
+
+      for (let i = 0; i < squares.length; i++) {
         squares[i].addEventListener('click', handleClick);
       }
-    }
-  }, 2000);
+
+      message.innerHTML = '';
+    }, 2000);
+  }
 }
