@@ -163,7 +163,10 @@ I am certainly looking forward to the day that i will be working on something mo
 
 #### HTML
 1. Lack of semantic html elements.
-2. Broken images (Failed HTML Validation)
+Fix: added Header, Nav, Main and sections to both HTML files.
+
+2. Broken images caused by missing alt & Src attributes (Failed HTML Validation)
+
 2. Webpage titles
 
 #### Tic Tac Toe javascript
@@ -176,6 +179,8 @@ I am certainly looking forward to the day that i will be working on something mo
 
 #### Other feedback
 1. Lack of clear visual feedback to users.
+Fix added a guiding start message to both games that gets hidden after player has initialized the game.
+
 2. Improved testing
 
 
