@@ -21,11 +21,11 @@ First time i used css flex and it was very practical.
 #### H1 text "Rock Paper Scissors"
 
 #### First Section Scoreboard & Result declaration
-H1 with two spans the by default displays 0-0.
+H1 with two spans that by default displays 0-0.
 H2 with a nested span that declares the outcome of the game.
 
 #### Second Section (Pick display)
-Contains two img elements. Either displaying a default image or the player and the computers picks.
+Contains two img elements. Displaying a default blank image or the player and the computers picks.
 
 #### Thrid Section (Profile Pictures)
 Contains two img elements. The player and the computers "profile pictures".
