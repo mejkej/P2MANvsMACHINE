@@ -12,12 +12,14 @@ Purpose, well the primary goal or purpose of this project was for me to learn Ja
 And i did succesfully create two games that would probably have been considered less than mediocre in 1985 hehe.
 But Rome was not built in a day and neither is a great programmer! 
 ## The Rock paper scissors game HTML & CSS part:
-### Navbar
+[Header Navbar](assets/images/documentation/header.png)
+### Header Navbar
 Header > Nav > Anchor. The two existing anchor elements wraps an img each. Headers background color set to darkcyan. The width is 100vw & The height is 100px. The a/img elements are styled to be round and has a 2 px solid black border.
 Also hover effect turning the white background color darker/gray when hovered.
 First time i used css flex and it was very practical.
 
 ### Main (Wrapping everything below the header)
+![](assets/images/documentation/rpsresponsive.png)
 #### H1 text "Rock Paper Scissors"
 
 #### First Section Scoreboard & Result declaration
@@ -84,7 +86,7 @@ The loop then continues with:
 
   ## The Tic Tac Toe games HTML & CSS:
 
-  ### The Navbar 
+  ### Header Navbar 
   Its exacly the same as on the other page.
 
   ### Main (Wrapping everything below the header)
