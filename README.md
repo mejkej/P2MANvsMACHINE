@@ -12,11 +12,11 @@ Purpose, well the primary goal or purpose of this project was for me to learn Ja
 And i did succesfully create two games that would probably have been considered less than mediocre in 1985 hehe.
 But Rome was not built in a day and neither is a great programmer! 
 ## The Rock paper scissors game HTML & CSS part:
-![Header Navbar](assets/images/documentation/header.png)
 ### Header Navbar
 Header > Nav > Anchor. The two existing anchor elements wraps an img each. Headers background color set to darkcyan. The width is 100vw & The height is 100px. The a/img elements are styled to be round and has a 2 px solid black border.
 Also hover effect turning the white background color darker/gray when hovered.
 First time i used css flex and it was very practical.
+![Header Navbar](assets/images/documentation/header.png)
 
 ### Main (Wrapping everything below the header)
 #### H1 text "Rock Paper Scissors"
@@ -101,7 +101,7 @@ The loop then continues with:
   ![Image of Sections described above](assets/images/documentation/tttmid.png)
   #### Third Section, Guide message & Reset Score Btn
   Sections background color is set to match the Header and contains: H2 element acting as a guiding start message & Button with the text "Reset Score".
-  ![Image of Third Section ](assets/images/documentation/tttbottom.png)
+  ![Image of Third Section](assets/images/documentation/tttbottom.png)
 ## The Tic tac toe games Javascript:
 ### Cached the dom
 First of i declared most of the variable at the top. Some of them i linked to the HTML and others was assigned a value.
@@ -125,7 +125,7 @@ to be declared by the #message H2. If that happens the squares event listener wi
 squares is a const variable declared on the top of the page with a path to the html using a class selector.
 Inside this function a const variable named unPickedSquare is declared and then gets assigned an array from squares.
 The Array filters out the squares that has been asigned a data-symbol. Another const variable named randomNumber is declared and get asigned the Math.floor(Math.random) method returning a randomPick from the unPickedsquares.
-the returned unPickedSquare gets assigned the src 'assets/images/o.png' and then the data-symbol attribute cumputerSymbol/'o'.
+the returned unPickedSquare gets assigned the src 'assets/images/o.png' and then the data-symbol attribute computerSymbol/'o'.
 ### resultDetector 
 The result detector will run its check after every move both after player and then after the computer.
 
@@ -181,6 +181,7 @@ I am certainly looking forward to the day that i will be working on something mo
 Fix: added Header, Nav, Main and sections to both HTML files.
 
 2. Broken images caused by missing alt & Src attributes (Failed HTML Validation)
+Fix: set a default src & Alt.
 
 2. Webpage titles
 
@@ -202,12 +203,11 @@ Fix added a guiding start message to both games that gets hidden after player ha
 ## Resources:
 The resources i have used to get this project done
 
-My mentor Seun
 
 Open Ais chat GPT:
 https://chat.openai.com/chat
 This has been a complety incredible tool that i have used. NOT TO WRITE THE CODE FOR ME.
-But more like a teach. All doe i have credited some of the code to Chat GPT.
+But more like a teacher. All doe i have credited some of the code to Chat GPT.
 
 https://www.youtube.com/ 
 
@@ -215,43 +215,42 @@ https://www.w3schools.com/
 
 https://codeinstitute.net/global/
 
-CSS formated by:
-https://www.cleancss.com/css-beautify/
-
 Code formated by:
-https://www.freeformatter.com/html-formatter.html#before-output
+[Freeformater.com](https://www.freeformatter.com/html-formatter.html#before-output)
 
 HTML & CSS validated by:
-https://validator.w3.org/#validate_by_input
+![validator.w3.org](https://validator.w3.org/#validate_by_input)
+![RPS HTML validated without errors](assets/images/documentation/rpshtmlvalidtion.png)
+![TTT HTML validated without errors](assets/images/documentation/ttthtmlvalidation.png)
+![CSS validated without errors](assets/images/documentation/cssvalidation.png)
 
 Javascript validated by:
 https://jshint.com/
+![RPS JS validated without errors](assets/images/documentation/rpsjsvalidation.png)
+![TTT JS validated without errors](assets/images/documentation/tttjsvalidation.png)
 
 Chromes developer tools has also been a great resource.
 
 ## Sources off icons and images:
-https://icons8.com/ has contributed to every single image/icon used on the website.
-https://ui.dev/amiresponsive for the Images diplaying the project using different devices.
+[Icons8](https://icons8.com/)
+Has contributed to every single image/icon used on the website.
 
-## Formating, Validating, Testing & Final Photos
-The Html Css and Javascript has been validated by the resources mentioned above and there are 
-photos of it below.
-The validator had a few opinions of my index.html the absence of alt attribute for the playerHand
-and computerHand images and some empty h1 or h2 and span elements but they are only empty until the 
-Javascript says otherwise.
+[Amiresponsive](https://ui.dev/amiresponsive)
+Images diplaying the project using different devices.
+
 ## Clone the project
 Incase anyone want to contribute to the project or develop it further here is a step by step guide:
 1. Write.
 2. 
  [here are instructions on how to clone it](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository)
 
-![Rock,paper,scissors Responsive](assets/images/documentation/rpsresponsive.png)
-![Tic tac Toe top of page Responsive](assets/images/documentation/tictactoetopresponsive.png)
-![Tic tac toe bottom om page Responsive](assets/images/documentation/tictactoeresponsivenrtwo.png)
-![Rock,paper,scissors html validated](assets/images/documentation/rpshtmlvalidated.png)
-![Tic tac toe html validated](assets/images/documentation/tictactoehtmlvalidated.png)
-![CSS validated](assets/images/documentation/cssvalidated.png)
-![Rock,paper,scissors Javascript Validated one](assets/images/documentation/rpsvalidatedone.png)
-![Rock,paper,scissors Javascript Validated two](assets/images/documentation/rpsvalidatorimgtwo.png)
-![Tic tac toe JavaScript validated](assets/images/documentation/tictactoevalidatedone.png)
-![Tic tac toe JavaScript validated](assets/images/documentation/tictactoevalidatedtwo.png)
+![Rock,paper,scissors Responsive]()
+![Tic tac Toe top of page Responsive]()
+![Tic tac toe bottom om page Responsive]()
+![Rock,paper,scissors html validated]()
+![Tic tac toe html validated]()
+![CSS validated]()
+![Rock,paper,scissors Javascript Validated one]()
+![Rock,paper,scissors Javascript Validated two]()
+![Tic tac toe JavaScript validated]()
+![Tic tac toe JavaScript validated]()
