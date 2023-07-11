@@ -217,9 +217,8 @@ https://codeinstitute.net/global/
 
 Code formated by:
 [Freeformater.com](https://www.freeformatter.com/html-formatter.html#before-output)
+HTML & CSS validated by[validator.w3.org](https://validator.w3.org/#validate_by_input):
 
-HTML & CSS validated by:
-![validator.w3.org](https://validator.w3.org/#validate_by_input)
 ![RPS HTML validated without errors](assets/images/documentation/rpshtmlvalidtion.png)
 ![TTT HTML validated without errors](assets/images/documentation/ttthtmlvalidation.png)
 ![CSS validated without errors](assets/images/documentation/cssvalidation.png)
