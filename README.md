@@ -195,51 +195,51 @@ Fix: set a default src & Alt.
 
 #### Other feedback
 1. Lack of clear visual feedback to users.
-Fix added a guiding start message to both games that gets hidden after player has initialized the game.
+Fix: Added a guiding start message to both games that gets hidden after player has initialized the game.
 
-2. Improved testing
+2. Improved testing.
+Fix: Manually tested the games by playing the games while watching developer tools.
 
 
 ## Resources:
 The resources i have used to get this project done
 
 
-Open Ais chat GPT:
-https://chat.openai.com/chat
+[Open Ais chat GPT](https://chat.openai.com/chat)
 This has been a complety incredible tool that i have used. NOT TO WRITE THE CODE FOR ME.
 But more like a teacher. All doe i have credited some of the code to Chat GPT.
 
-https://www.youtube.com/ 
+[Youtube.com](https://www.youtube.com/) 
 
-https://www.w3schools.com/
+[W3schools.com](https://www.w3schools.com/)
 
-https://codeinstitute.net/global/
+[CodeInstitute.net](https://codeinstitute.net/global/)
 
-Code formated by:
+HTML formated by:
 [Freeformater.com](https://www.freeformatter.com/html-formatter.html#before-output)
-HTML & CSS validated by[validator.w3.org](https://validator.w3.org/#validate_by_input):
+HTML & CSS validated by:
+[validator.w3.org](https://validator.w3.org/#validate_by_input)
 
 ![RPS HTML validated without errors](assets/images/documentation/rpshtmlvalidtion.png)
 ![TTT HTML validated without errors](assets/images/documentation/ttthtmlvalidation.png)
 ![CSS validated without errors](assets/images/documentation/cssvalidation.png)
 
 Javascript validated by:
-https://jshint.com/
+[jshint.com](https://jshint.com/)
 ![RPS JS validated without errors](assets/images/documentation/rpsjsvalidation.png)
 ![TTT JS validated without errors](assets/images/documentation/tttjsvalidation.png)
 
 Chromes developer tools has also been a great resource.
 
 ## Sources off icons and images:
-[Icons8](https://icons8.com/)
-Has contributed to every single image/icon used on the website.
+[Icons8](https://icons8.com)
 
 [Amiresponsive](https://ui.dev/amiresponsive)
 Images diplaying the project using different devices.
 
 ## Clone the project
 Incase anyone want to contribute to the project or develop it further here is a step by step guide:
-1. Write.
+1. Write. 
 2. 
  [here are instructions on how to clone it](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository)
 
