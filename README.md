@@ -98,10 +98,10 @@ The loop then continues with:
 
   #### Section two, The gameboard.
   Contains three divs, top, mid and bot. Each div contains three img elements each img element is a square on the board. The img displays an unpicked square by default, but if picked the src and data-symbol will change depending on who picked the square.
-  
+  ![Image of Sections described above](assets/images/documentation/tttmid.png)
   #### Third Section, Guide message & Reset Score Btn
   Sections background color is set to match the Header and contains: H2 element acting as a guiding start message & Button with the text "Reset Score".
-
+  ![Image of Third Section ](assets/images/documentation/tttbottom.png)
 ## The Tic tac toe games Javascript:
 ### Cached the dom
 First of i declared most of the variable at the top. Some of them i linked to the HTML and others was assigned a value.
