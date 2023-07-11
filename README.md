@@ -12,14 +12,13 @@ Purpose, well the primary goal or purpose of this project was for me to learn Ja
 And i did succesfully create two games that would probably have been considered less than mediocre in 1985 hehe.
 But Rome was not built in a day and neither is a great programmer! 
 ## The Rock paper scissors game HTML & CSS part:
-[Header Navbar](assets/images/documentation/header.png)
+![Header Navbar](assets/images/documentation/header.png)
 ### Header Navbar
 Header > Nav > Anchor. The two existing anchor elements wraps an img each. Headers background color set to darkcyan. The width is 100vw & The height is 100px. The a/img elements are styled to be round and has a 2 px solid black border.
 Also hover effect turning the white background color darker/gray when hovered.
 First time i used css flex and it was very practical.
 
 ### Main (Wrapping everything below the header)
-![](assets/images/documentation/rpsresponsive.png)
 #### H1 text "Rock Paper Scissors"
 
 #### First Section Scoreboard & Result declaration
@@ -31,7 +30,7 @@ Contains two img elements. Displaying a default blank image or the player and th
 
 #### Thrid Section (Profile Pictures)
 Contains two img elements. The player and the computers "profile pictures".
-
+![Image of sections described above](assets/images/documentation/rpsmid.png)
 #### Fourth Section
 Sections background color is set to darkcyan and the width is set to 100 vw.
 Contains three buttons:
@@ -39,6 +38,7 @@ Rock, paper and scissors. Img element nested inside the buttons. The buttons are
 
 #### Div container 
 Contains a  H2 that acts as a guiding start message. Below it is a button that resets the score. This button has a yellow background color, and are wider than the buttons above. The rest of the styling is the same as the buttons above.
+![Image of fourth section and div container](assets/images/documentation/rpsbottombtns.png)
 ## The Rock, paper, scissors Javascript:
 First off i declared all the global scope variables and linked them to their HTML elements.
 
