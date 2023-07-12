@@ -1,7 +1,8 @@
-![Top of home page](assets/images/documentation/rpsresponsive.png)
-[Link to the live project](https://mejkej.github.io/P2MANvsMACHINE/index.html)
 # ManvsMachine.
 Play rock paper scissors & Tic tac toe against the computer.
+![Top of home page](assets/images/documentation/rpsresponsive.png)
+[Link to the live project](https://mejkej.github.io/P2MANvsMACHINE/index.html)
+
 ## Introduction:
 This was my second project using HTML & CSS and the first one using Javascript. 
 So the project contains two games, rock paper scissors & Tic tac toe.
@@ -30,15 +31,14 @@ Contains two img elements. Displaying a default blank image or the player and th
 
 #### Thrid Section (Profile Pictures)
 Contains two img elements. The player and the computers "profile pictures".
-![Image of sections described above](assets/images/documentation/rpsmid.png)
 #### Fourth Section
 Sections background color is set to darkcyan and the width is set to 100 vw.
 Contains three buttons:
 Rock, paper and scissors. Img element nested inside the buttons. The buttons are styled with a black solid border of 2 px, They are slightly rounded with a border radius of 10 px and has a hover effect changing the white background color to darkred. 
-
 #### Div container 
 Contains a  H2 that acts as a guiding start message. Below it is a button that resets the score. This button has a yellow background color, and are wider than the buttons above. The rest of the styling is the same as the buttons above.
-![Image of fourth section and div container](assets/images/documentation/rpsbottombtns.png)
+
+![Image of RPS Main](assets/images/documentation/rpsmain.png)
 ## The Rock, paper, scissors Javascript:
 First off i declared all the global scope variables and linked them to their HTML elements.
 
@@ -55,53 +55,53 @@ for a click. the let variable playerPick gets assigned the e.targets.(ID) the id
 playerHand.src gets assigned 'assets/images/' + playerPick + '.png'. (The path to the clicked image).
 rpsMsg.innerHTML = ''; (Setting the string of the guiding start message to be empty)
 The loop then continues with:
-  getCompPick();
-  declareWinner();
-  scoreCount();
-  round();
+getCompPick();
+declareWinner();
+scoreCount();
+round();
 
-  ### GetCompPick
-  inside this function a const variable is declared called randomNumber. randomNumber = a method 
-  "Math.floor(Math.random() * 3) + 1;
-  Math.floor Makes the random number generated to a 0 - 1 or 2 and not 0,33 0,66 or 0,99.
-  The +1 makes the possible numbers generated 1, 2, or 3 instead of 0, 1, or 2.
-  Then there is 3 if statements pairing the random numbers to either rock paper or scissors.
-  If randomNumber === 1 compPick = rock and computerHand.src = 'assets/images/' + CompPick + '.png'.
+### GetCompPick
+inside this function a const variable is declared called randomNumber. randomNumber = a method 
+"Math.floor(Math.random() * 3) + 1;
+Math.floor Makes the random number generated to a 0 - 1 or 2 and not 0,33 0,66 or 0,99.
+The +1 makes the possible numbers generated 1, 2, or 3 instead of 0, 1, or 2.
+Then there is 3 if statements pairing the random numbers to either rock paper or scissors.
+If randomNumber === 1 compPick = rock and computerHand.src = 'assets/images/' + CompPick + '.png'.
 
-  ### declareWinner
-  In this function all the possible outcomes of a round is stated and how they should be handled.
-  So the picks gets compared and then the resultText.innerHtml Declares Win Loss or Draw.
+### declareWinner
+In this function all the possible outcomes of a round is stated and how they should be handled.
+So the picks gets compared and then the resultText.innerHtml Declares Win Loss or Draw.
 
-  ### scoreCount
-  This function handles the scoreboard by looking at the resultText.innerHtml messsage.
-  If the result text declares 'YOU WIN!' the let variable playerPoints increases by 1.
-  And that then results in that the const variable playerScore.innerHTML displays the value of
-  playerPoints and viceversa if the computer wins.
+### scoreCount
+This function handles the scoreboard by looking at the resultText.innerHtml messsage.
+If the result text declares 'YOU WIN!' the let variable playerPoints increases by 1.
+And that then results in that the const variable playerScore.innerHTML displays the value of
+playerPoints and viceversa if the computer wins.
  
-  ### round
-  This function resets the SRC of the playerHand image & compHand image. It also clears the resultText.
-  So that after both players have made their Picks the result has been declared and the scoreboard has been
-  updated. Both played hand images and result text is cleared indicating that its time to play the next round
-  while still keeping track of the Scoreboard.
+### round
+This function resets the SRC of the playerHand image & compHand image. It also clears the resultText.
+So that after both players have made their Picks the result has been declared and the scoreboard has been
+updated. Both played hand images and result text is cleared indicating that its time to play the next round
+while still keeping track of the Scoreboard.
 
-  ## The Tic Tac Toe games HTML & CSS:
+## The Tic Tac Toe games HTML & CSS:
 
-  ### Header Navbar 
-  Its exacly the same as on the other page.
+### Header Navbar 
+Its exacly the same as on the other page.
 
-  ### Main (Wrapping everything below the header)
-  #### H1 text "Tic Tac Toe"
+### Main (Wrapping everything below the header)
+#### H1 text "Tic Tac Toe"
 
-  #### Section for Scoreboard & Result declaration.
-  H2 declaring the games outcome. 
-  H1 with two nested spans default displaying 0-0.
+#### Section for Scoreboard & Result declaration.
+H2 declaring the games outcome. 
+H1 with two nested spans default displaying 0-0.
 
-  #### Section two, The gameboard.
-  Contains three divs, top, mid and bot. Each div contains three img elements each img element is a square on the board. The img displays an unpicked square by default, but if picked the src and data-symbol will change depending on who picked the square.
-  ![Image of Sections described above](assets/images/documentation/tttmid.png)
-  #### Third Section, Guide message & Reset Score Btn
-  Sections background color is set to match the Header and contains: H2 element acting as a guiding start message & Button with the text "Reset Score".
-  ![Image of Third Section](assets/images/documentation/tttbottom.png)
+#### Section two, The gameboard.
+Contains three divs, top, mid and bot. Each div contains three img elements each img element is a square on the board. The img displays an unpicked square by default, but if picked the src and data-symbol will change depending on who picked the square.
+
+#### Third Section, Guide message & Reset Score Btn
+Sections background color is set to match the Header and contains: H2 element acting as a guiding start message & Button with the text "Reset Score".
+![Image of TTT Main](assets/images/documentation/tttmain.png)
 ## The Tic tac toe games Javascript:
 ### Cached the dom
 First of i declared most of the variable at the top. Some of them i linked to the HTML and others was assigned a value.
@@ -165,7 +165,21 @@ clears the #message then starts a for loop for all the squares[i] asigning them 
 Setting their data-symbol to '' and calls the handleClick function to restore the event listeners.
 So 3 seconds after completed game the game is reset but the score count is not.
 
+## Testing & Validation
+### HTML & CSS validated by[validator.w3.org](https://validator.w3.org/#validate_by_input):
+#### Rock, paper scissors HTML validated without errors.
+![RPS HTML validated without errors](assets/images/documentation/rpshtmlvalidtion.png)
+#### Tic tac toe HTML validated without errors.
+![TTT HTML validated without errors](assets/images/documentation/ttthtmlvalidation.png)
+#### CSS validated without errors.
+![CSS validated without errors](assets/images/documentation/cssvalidation.png)
 
+### Javascript Validated by[Jshint validator](https://jshint.com/):
+#### RPS Javascript validated without errors.
+![RPS JS validion image](assets/images/documentation/rpsjsvalidation.png)
+#### TTT Javascript validated without errors.
+![TTT JS validion image](assets/images/documentation/tttjsvalidation.png)
+### Javascript manual testing with developer tools
 
 ## My personal thaught on the project
 The jump from Html & Css to Javascript was surprisingly challenging i gotta say. But for everyday that i worked on the project it made more and more sense. I think i almost finished the rock paper scissors game 10 times just to clear the whole JS file and redo the whole thing over and over again until it made sense. If you know html css and javascript you can get a job, atleast thats what a few dudes on youtube claims. So i did my best to try and learn as much as possible.
@@ -181,7 +195,7 @@ I am certainly looking forward to the day that i will be working on something mo
 Fix: added Header, Nav, Main and sections to both HTML files.
 
 2. Broken images caused by missing alt & Src attributes (Failed HTML Validation)
-Fix: set a default src & Alt.
+Fix: set a default Src & Alt.
 
 2. Webpage titles
 
@@ -189,7 +203,7 @@ Fix: set a default src & Alt.
 1. 
 
 #### README file
-1. 
+1. Missing cloning instructions.
 
 #### Lack of git commit messages
 
@@ -202,8 +216,13 @@ Fix: Manually tested the games by playing the games while watching developer too
 
 
 ## Resources:
-The resources i have used to get this project done
+The resources i have used to get this project done:
 
+Sources off icons and images: [Icons8.com](https://icons8.com)
+
+
+[Amiresponsive](https://ui.dev/amiresponsive)
+Images diplaying the project using different devices.
 
 [Open Ais chat GPT](https://chat.openai.com/chat)
 This has been a complety incredible tool that i have used. NOT TO WRITE THE CODE FOR ME.
@@ -211,45 +230,18 @@ But more like a teacher. All doe i have credited some of the code to Chat GPT.
 
 [Youtube.com](https://www.youtube.com/) 
 
-[W3schools.com](https://www.w3schools.com/)
+[W3Schools.com](https://www.w3schools.com/)
 
 [CodeInstitute.net](https://codeinstitute.net/global/)
 
-HTML formated by:
-[Freeformater.com](https://www.freeformatter.com/html-formatter.html#before-output)
-HTML & CSS validated by:
-[validator.w3.org](https://validator.w3.org/#validate_by_input)
+Developer tools has also been a great resource.
 
-![RPS HTML validated without errors](assets/images/documentation/rpshtmlvalidtion.png)
-![TTT HTML validated without errors](assets/images/documentation/ttthtmlvalidation.png)
-![CSS validated without errors](assets/images/documentation/cssvalidation.png)
 
-Javascript validated by:
-[jshint.com](https://jshint.com/)
-![RPS JS validated without errors](assets/images/documentation/rpsjsvalidation.png)
-![TTT JS validated without errors](assets/images/documentation/tttjsvalidation.png)
 
-Chromes developer tools has also been a great resource.
-
-## Sources off icons and images:
-[Icons8](https://icons8.com)
-
-[Amiresponsive](https://ui.dev/amiresponsive)
-Images diplaying the project using different devices.
 
 ## Clone the project
 Incase anyone want to contribute to the project or develop it further here is a step by step guide:
 1. Write. 
-2. 
- [here are instructions on how to clone it](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository)
+2.
 
-![Rock,paper,scissors Responsive]()
-![Tic tac Toe top of page Responsive]()
-![Tic tac toe bottom om page Responsive]()
-![Rock,paper,scissors html validated]()
-![Tic tac toe html validated]()
-![CSS validated]()
-![Rock,paper,scissors Javascript Validated one]()
-![Rock,paper,scissors Javascript Validated two]()
-![Tic tac toe JavaScript validated]()
-![Tic tac toe JavaScript validated]()
+[here are instructions on how to clone it](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository)
