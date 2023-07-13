@@ -85,6 +85,7 @@ updated. Both played hand images and result text is cleared indicating that its 
 while still keeping track of the Scoreboard.
 
 ## The Tic Tac Toe games HTML & CSS:
+![TTT page from am i responsive](assets/images/documentation/tttresponsive.png)
 
 ### Header Navbar 
 Its exacly the same as on the other page.
