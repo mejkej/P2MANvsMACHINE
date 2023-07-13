@@ -197,7 +197,6 @@ The resources i have used to get this project done:
 
 Sources off icons and images: [Icons8.com](https://icons8.com)
 
-
 [Amiresponsive](https://ui.dev/amiresponsive)
 Images diplaying the project using different devices.
 
@@ -211,14 +210,22 @@ But more like a teacher. All doe i have credited some of the code to Chat GPT.
 
 [CodeInstitute.net](https://codeinstitute.net/global/)
 
+[CodeInstitutes ReadMe template Love-maths](https://github.com/Code-Institute-Solutions/readme-love-maths/tree/master)
+
 Developer tools has also been a great resource.
 
 
+## Deployment
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+In the GitHub repository, navigate to the Settings tab
+From the source section drop-down menu, select the Main Branch.
+Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 
 ## Clone the project
-Incase anyone want to contribute to the project or develop it further here is a step by step guide:
-1. Write. 
-2.
+Incase anyone want to contribute to the project or develop it further here is a step by step guide to clone it:
+1. Go to https://github.com/mejkej/P2MANvsMACHINE 
+2. Press the button with the text "Code" and an arrow down.
+3. You will be presented with the available options of how to clone it.
 
 [here are instructions on how to clone it](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository)
