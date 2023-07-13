@@ -177,10 +177,12 @@ Fix: Changed the titles to be more descriptive.
 #### Tic Tac Toe javascript
 1. Issues with scoreboard not updating correctly in certain scenarios.
 2. Issues with the the gameboard not getting reset in certain scenarios.
+3. Console errors
 Fix: Updated the code so that, everything is functioning correctly now. Re structured the code so that only incase of a result it will go down the gameOver round scoreKeeper path. Which now also removes event listeners from the squares while reseting the game.
-
+![Updated Scores no errors in console](assets/images/documentation/tttscoresupdated.png)
 #### README file
 1. Missing cloning instructions.
+2. Missing deployment instructions.
 
 #### Lack of git commit messages
 Fix: I have tried my best to keep consistant in pushing short descriptive commits.
@@ -204,6 +206,7 @@ Images diplaying the project using different devices.
 [Open Ais chat GPT](https://chat.openai.com/chat)
 This has been a complety incredible tool that i have used. NOT TO WRITE THE CODE FOR ME.
 But more like a teacher. All doe i have credited some of the code to Chat GPT.
+It has also been useful during the resubmisson of this project.
 
 [Youtube.com](https://www.youtube.com/) 
 
