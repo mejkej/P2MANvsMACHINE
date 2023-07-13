@@ -171,22 +171,25 @@ Fix: added Header, Nav, Main and sections to both HTML files.
 Fix: set a default Src & Alt.
 
 2. Webpage titles
-Fix: Changed the titles to a more descriptive one.
+Fix: Changed the titles to be more descriptive.
 
 #### Tic Tac Toe javascript
-1. 
+1. Issues with scoreboard not updating correctly in certain scenarios.
+2. Issues with the the gameboard not getting reset in certain scenarios.
+Fix: Updated the code so that, everything is functioning correctly now. Re structured the code so that only incase of a result it will go down the gameOver round scoreKeeper path. Which now also removes event listeners from the squares while reseting the game.
 
 #### README file
 1. Missing cloning instructions.
 
 #### Lack of git commit messages
+Fix: I have tried my best to keep consistant in pushing short descriptive commits.
 
 #### Other feedback
 1. Lack of clear visual feedback to users.
 Fix: Added a guiding start message to both games that gets hidden after player has initialized the game.
 
 2. Improved testing.
-Fix: Manually tested the games by playing the games while watching developer tools.
+Fix: Manually tested the games by playing the games while watching developer tools & Reading through the assesors feedback.
 
 
 ## Resources:
