@@ -150,9 +150,9 @@ This function updates the score if a winner is declared the let variable compute
 
 ### Javascript Validated by[Jshint validator](https://jshint.com/):
 #### RPS Javascript validated without errors.
-![RPS JS validion image](assets/images/documentation/rpsjsvalidation.png)
+![RPS JS validation image](assets/images/documentation/rpsjsvalidation.png)
 #### TTT Javascript validated without errors.
-![TTT JS validion image](assets/images/documentation/tttjsvalidation.png)
+![TTT JS validation image](assets/images/documentation/tttjsvalidation.png)
 ### Javascript manual testing with developer tools
 
 ## My personal thaught on the project
