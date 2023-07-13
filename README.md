@@ -103,67 +103,40 @@ Contains three divs, top, mid and bot. Each div contains three img elements each
 Sections background color is set to match the Header and contains: H2 element acting as a guiding start message & Button with the text "Reset Score".
 ![Image of TTT Main](assets/images/documentation/tttmain.png)
 ## The Tic tac toe games Javascript:
-### Cached the dom
+### Declared variables
 First of i declared most of the variable at the top. Some of them i linked to the HTML and others was assigned a value.
 
-### ResetButton
+### resetBtn
 Added a event listener to the button if button is clicked the page will get reloaded.
 Im sure there are better ways of doing that but time was of the essence and it does the job.
 
-### for loop 
-squares is a const varible declared on the top of the page the document can be gotten using a class selector.
+### for loop
+squares is a const varible, the object is gotten using a class selector.
 The for loop adds a click event listener to the squares[i]. Then it refers to the handleClick function,
 resulting in that everytime a square is clicked the handleClick function is called to handle the event.
 
-### handleClick(event)
-The function first checks if clicked square has a data-symbol if not that means the square
-has not yet been picked and the square/event target gets asigned a data-symbol attribute of 'x' / playerSymbol.
-Then the the event target get assigned the src of 'assets/images/x.png'. The function then checks for a winner or a loser
-to be declared by the #message H2. If that happens the squares event listener will be removed.
-
-### getCompPick 
-squares is a const variable declared on the top of the page with a path to the html using a class selector.
-Inside this function a const variable named unPickedSquare is declared and then gets assigned an array from squares.
-The Array filters out the squares that has been asigned a data-symbol. Another const variable named randomNumber is declared and get asigned the Math.floor(Math.random) method returning a randomPick from the unPickedsquares.
-the returned unPickedSquare gets assigned the src 'assets/images/o.png' and then the data-symbol attribute computerSymbol/'o'.
-### resultDetector 
-The result detector will run its check after every move both after player and then after the computer.
-
-First of all the img elements/squares has all been asigned an id first one is #0 and last one is #8.
-There is a const variable at the top of the page named waysToWin. It has been assigned eight arrays,
-These arrays contains the possible ways to win, three numbers the squares ids.
+### The Main loop handleClick(event)
+The function first checks if clicked square has a data-symbol, if not that means the square has not yet been picked.
+The square / event target gets asigned the src of 'assets/images/x.png' Then the startMsg is hidden, and a data-symbol attribute of 'x' / playerSymbol. The loop then goes on to check if there is a win, lose or draw. if there is not the getCompPick() function is called. The result detector function checks for a outcome in between each time the player and the computer makes a move.
+If an outcome of the game is detected the gameOver() function is called which calls for the round() function. Followed by the scoreKeeper() function.
 
 
-Inside the function a let variable named winner is declared and given the value of null. 
-Then there is a for loop looping the ways to win variables length.
-Inside the function there is a new const variable declared given an array [a, b, c].
-[a, b, c] Is then asigned waysToWin[i] in other words [a] is now the first number in the eight arrays
-[b] the second and [c] the third.
+### resultDetector()
+Checks the squares data-symbols to see if there are any winning combinations on the board. If true, the varible winner which is set to null by default will be set to the winners data-symbol.
+If there is a winner the message variable will state either 'You Win!' or 'You Lost!'. If there is not a winner the function checks for a draw. By an array checking if there is any squares without a data-symbol set. If there is not it will return true and the message will display 'Draw!'. If none of these scenarios are true the handleClick loop will continue let the player and the computer make their moves until a result is detected.  
+### getCompPick()
+Through an array of all squares filtering out the squares with a set data-symbol. This function will generate a randomized computer pick by generating a random number depending on the amount of squares available. The UnpickedSquare[randomNumber] will get the src and data-symbol representing the computer.
 
-Then the function checks if square [a] has been asigned a data-symbol. it then goes on to compare if [a]&[b]
-has the same data-symbol. Then it checks if [a]&[c] data-symbol equals each others. If everything so far has
-turned out to be true, the let variable winner = square[a] data-symbol. if winner = playerSymbol the #message
-will read 'You Win!' and if the winner = computerSymbol the #message.innerHTML will read 'You Lost!'
+### gameOver()
+This function removes the event listener from the squares for loop. If the message.innerHTML declares an outcome. It then goes on to call for the round() function.
 
-Lastly incase there was no winner, the function continues to run an array from every square checking if there
-is any squares that has not yet been asigned a data-symbol. If all squares has been asigned a data-symbol
-that means its a draw and the #message will read 'Draw!'
+### round()
+This function resets the squares src and data-symbol attribute to the default, it also re-attaches the squares event listener and resets the message to an empty string during a two second time out.
 
-### gameOver
-This function checks for the #message to call a win or a loss. If that happens a for loop will start looping the 
-squares[i] and the event listener will be removed from the squares one by one. By the handleClick (event) function. 
+### scoreKeeper()
+This function updates the score if a winner is declared the let variable computerScore or playerScore will ++. The const variables computerScoreDisplay & playerScoreDisplays innerHTML will display the Score until score is reset (By clicking the reset score button) or the webpage is refreshed.
 
-### scoreKeeper
-On the top of the page i declared two let variables playerScore & computerScore these was asigned the value of 0.
-I also declared two const variables player&computerScoreDisplay and i linked them to the html with an id. 
-If the #message.innerHTML declares You Win! playerScore++ and playerScoreDisplay.innerHTML = playerScore.
-if the #message declares You Lost the same thing happens but to the computerScoreDisplay of course.
 
-### round
-If #message declares any outcome it means that the game is over. So when that happens this function
-clears the #message then starts a for loop for all the squares[i] asigning them the src 'assets/images/sqr.png'.
-Setting their data-symbol to '' and calls the handleClick function to restore the event listeners.
-So 3 seconds after completed game the game is reset but the score count is not.
 
 ## Testing & Validation
 ### HTML & CSS validated by[validator.w3.org](https://validator.w3.org/#validate_by_input):
@@ -198,6 +171,7 @@ Fix: added Header, Nav, Main and sections to both HTML files.
 Fix: set a default Src & Alt.
 
 2. Webpage titles
+Fix: Changed the titles to a more descriptive one.
 
 #### Tic Tac Toe javascript
 1. 
